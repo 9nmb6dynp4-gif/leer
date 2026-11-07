@@ -1,0 +1,3777 @@
+<!DOCTYPE html>
+<html lang="de"><head><script data-bard-client-injected="true">(function(firebaseConfig, initialAuthToken, appId) {
+        window.__firebase_config = firebaseConfig;
+        window.__initial_auth_token = initialAuthToken;
+        window.__app_id = appId;
+            })("\n{\n  \"apiKey\": \"AIzaSyCqyCcs2R2e7AegGjvFAwG98wlamtbHvZY\",\n  \"authDomain\": \"bard-frontend.firebaseapp.com\",\n  \"projectId\": \"bard-frontend\",\n  \"storageBucket\": \"bard-frontend.firebasestorage.app\",\n  \"messagingSenderId\": \"175205271074\",\n  \"appId\": \"1:175205271074:web:2b7bd4d34d33bf38e6ec7b\"\n}\n","eyJhbGciOiJSUzI1NiIsImtpZCI6IjExNjRiNzdiNDMzZDdhMDAyMWI4NjE4YjhjYTU3ZTMyZGI5MWUxMTMiLCJ0eXAiOiJKV1QifQ.eyJzdWIiOiJmaXJlYmFzZS1hZG1pbnNkay1mYnN2Y0BiYXJkLWZyb250ZW5kLmlhbS5nc2VydmljZWFjY291bnQuY29tIiwiYXVkIjoiaHR0cHM6Ly9pZGVudGl0eXRvb2xraXQuZ29vZ2xlYXBpcy5jb20vZ29vZ2xlLmlkZW50aXR5LmlkZW50aXR5dG9vbGtpdC52MS5JZGVudGl0eVRvb2xraXQiLCJ1aWQiOiIwOTY2OTM1Mjk1ODMxNzAyODgyMiIsImlzcyI6ImZpcmViYXNlLWFkbWluc2RrLWZic3ZjQGJhcmQtZnJvbnRlbmQuaWFtLmdzZXJ2aWNlYWNjb3VudC5jb20iLCJjbGFpbXMiOnsiYXBwSWQiOiJjX2Y1NzkzNDIxZGFkZDEyYWJfaGlmaV9jb2NrcGl0Lmh0bWwtODM0In0sImV4cCI6MTc5NDA2NTI5MSwiaWF0IjoxNzk0MDYxNjkxLCJhbGciOiJSUzI1NiJ9.AjfE2FAseeg5czhyWH07hH1-kUT4DrdkqDJZut53k0Wm_UYq4_wasSaRRz1NE-2oW2TVVffpjoDwdhYqHBE7FwvTKreyzmR79-FcmSLwlN6i5eyUg7XdvIyiZhZ5K7U90O82-fIFZxLfJb2BTtJ8-kSYQOsRt88NW1cFeMak4No1haq2nw-RRX8bqefToKd72bGOAjJKDLQI6_4JCaD3790XTKQU4M2qQA_XByv9Bb8oF4On9R6o0rCdgUgvEIQmQPVUCJkxr8GI_rvvTvRcqEK79TB0VU_tOPj2ewVG_O0bquKj9FvEB_LfNSs_L9HuUW94NyjhzPcOcecMT_F6Mg","c_f5793421dadd12ab_hifi_cockpit.html-834")</script><script data-bard-client-injected="true">
+  document.addEventListener('input', (event) => {
+    if (event.target && (event.target.isContentEditable || event.target.hasAttribute('contenteditable'))) {
+      const clonedDoc = document.cloneNode(true);
+      const injectedScripts = clonedDoc.querySelectorAll('[data-bard-client-injected="true"]');
+      injectedScripts.forEach(el => el.remove());
+      window.parent.postMessage({
+        type: 'inlineEdit',
+        html: '<!DOCTYPE html>\n' + clonedDoc.documentElement.outerHTML
+      }, '*');
+    }
+  });
+</script><script data-bard-client-injected="true">(function(){'use strict';window.addEventListener("message",a=>{a.data&&a.data.type==="SUPPLEMENTAL_DATA_UPDATE"&&window.dispatchEvent(new CustomEvent("supplementaldataupdate",{detail:a.data.data}))});}).call(this);
+</script><script data-bard-client-injected="true">(function(){'use strict';var k=typeof Object.defineProperties=="function"?Object.defineProperty:function(a,b,d){if(a==Array.prototype||a==Object.prototype)return a;a[b]=d.value;return a};function m(a){a=["object"==typeof globalThis&&globalThis,a,"object"==typeof window&&window,"object"==typeof self&&self,"object"==typeof global&&global];for(var b=0;b<a.length;++b){var d=a[b];if(d&&d.Math==Math)return d}throw Error("Cannot find global object");}var q=m(this);
+function r(a,b){if(b)a:{var d=q;a=a.split(".");for(var c=0;c<a.length-1;c++){var e=a[c];if(!(e in d))break a;d=d[e]}a=a[a.length-1];c=d[a];b=b(c);b!=c&&b!=null&&k(d,a,{configurable:!0,writable:!0,value:b})}}function t(a){function b(c){return a.next(c)}function d(c){return a.throw(c)}return new Promise(function(c,e){function f(g){g.done?c(g.value):Promise.resolve(g.value).then(b,d).then(f,e)}f(a.next())})}function u(a){return t(a())}
+r("Object.values",function(a){return a?a:function(b){var d=[],c;for(c in b)Object.prototype.hasOwnProperty.call(b,c)&&d.push(b[c]);return d}});r("Array.prototype.includes",function(a){return a?a:function(b,d){var c=this;c instanceof String&&(c=String(c));var e=c.length;d=d||0;for(d<0&&(d=Math.max(d+e,0));d<e;d++){var f=c[d];if(f===b||Object.is(f,b))return!0}return!1}});/*
+
+ MIT License
+
+ Copyright (c) 2017-2023 W.Y.
+
+ Permission is hereby granted, free of charge, to any person obtaining a copy
+ of this software and associated documentation files (the "Software"), to deal
+ in the Software without restriction, including without limitation the rights
+ to use, copy, modify, merge, publish, distribute, sublicense, and/or sell
+ copies of the Software, and to permit persons to whom the Software is
+ furnished to do so, subject to the following conditions:
+
+ The above copyright notice and this permission notice shall be included in
+ all copies or substantial portions of the Software.
+
+ THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR
+ IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY,
+ FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE
+ AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER
+ LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM,
+ OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE
+ SOFTWARE.
+
+*/
+function v(a,b){var d=a.style;b.backgroundColor&&(d.backgroundColor=b.backgroundColor);b.width&&(d.width=`${b.width}px`);b.height&&(d.height=`${b.height}px`);var c=b.style;c!=null&&Object.keys(c).forEach(e=>{d[e]=c[e]})};var aa=(()=>{var a=0;return()=>{a+=1;return`u${`0000${(Math.random()*1679616<<0).toString(36)}`.slice(-4)}${a}`}})();function w(a){var b=[];for(let d=0,c=a.length;d<c;d++)b.push(a[d]);return b}let y=null;function z(a={}){return y?y:a.u?y=a.u:y=w(window.getComputedStyle(document.documentElement))}function A(a,b){return(a=(a.ownerDocument.defaultView||window).getComputedStyle(a).getPropertyValue(b))?parseFloat(a.replace("px","")):0}
+function B(a,b={}){var d;if(!(d=b.width)){d=A(a,"border-left-width");var c=A(a,"border-right-width");d=a.clientWidth+d+c}(b=b.height)||(b=A(a,"border-top-width"),c=A(a,"border-bottom-width"),b=a.clientHeight+b+c);return{width:d,height:b}}function C(a){return new Promise((b,d)=>{var c=new Image;c.onload=()=>{c.decode().then(()=>{requestAnimationFrame(()=>b(c))})};c.onerror=d;c.crossOrigin="anonymous";c.decoding="async";c.src=a})}
+function ba(a){return u(function*(){return Promise.resolve().then(()=>(new XMLSerializer).serializeToString(a)).then(encodeURIComponent).then(b=>`data:image/svg+xml;charset=utf-8,${b}`)})}
+function ca(a,b,d){return u(function*(){var c=document.createElementNS("http://www.w3.org/2000/svg","svg"),e=document.createElementNS("http://www.w3.org/2000/svg","foreignObject");c.setAttribute("width",`${b}`);c.setAttribute("height",`${d}`);c.setAttribute("viewBox",`0 0 ${b} ${d}`);e.setAttribute("width","100%");e.setAttribute("height","100%");e.setAttribute("x","0");e.setAttribute("y","0");e.setAttribute("externalResourcesRequired","true");c.appendChild(e);e.appendChild(a);return ba(c)})}
+var D=(a,b)=>{if(a instanceof b)return!0;a=Object.getPrototypeOf(a);return a===null?!1:a.constructor.name===b.name||D(a,b)};function da(a,b){return z(b).map(d=>{var c=a.getPropertyValue(d),e=a.getPropertyPriority(d);return`${d}: ${c}${e?" !important":""};`}).join(" ")}
+function E(a,b,d,c){a=window.getComputedStyle(a,d);var e=a.getPropertyValue("content");if(e!==""&&e!=="none"){var f=aa();try{b.className=`${b.className} ${f}`}catch(h){return}e=document.createElement("style");var g=e.appendChild;d=`.${f}:${d}`;a.cssText?(c=a.getPropertyValue("content"),c=`${a.cssText} content: '${c.replace(/'|"/g,"")}';`):c=da(a,c);g.call(e,document.createTextNode(`${d}{${c}}`));b.appendChild(e)}};function F(a){return a.search(/^(data:)/)!==-1}function G(a,b,d){return u(function*(){var c=yield fetch(a,b);if(c.status===404)throw Error(`Resource "${c.url}" not found`);var e=yield c.blob();return new Promise((f,g)=>{var h=new FileReader;h.onerror=g;h.onloadend=()=>{try{f(d({v:c,result:h.result}))}catch(l){g(l)}};h.readAsDataURL(e)})})}const H={};function ea(a,b,d){var c=a.replace(/\?.*/,"");d&&(c=a);/ttf|otf|eot|woff2?/i.test(c)&&(c=c.replace(/.*\//,""));return b?`[${b}]${c}`:c}
+function I(a,b,d){return u(function*(){var c=ea(a,b,d.F);if(H[c]!=null)return H[c];d.B&&(a+=(/\?/.test(a)?"&":"?")+(new Date).getTime());try{let f=yield G(a,d.l,({v:g,result:h})=>{b||(b=g.headers.get("Content-Type")||"");return h.split(/,/)[1]});var e=`data:${b};base64,${f}`}catch(f){e=d.o||""}return H[c]=e})};const J={R:"application/font-woff",S:"application/font-woff",O:"application/font-truetype",C:"application/vnd.ms-fontobject",J:"image/png",H:"image/jpeg",G:"image/jpeg",D:"image/gif",N:"image/tiff",M:"image/svg+xml",P:"image/webp"};function K(a){return(a=/\.([^./]*?)$/g.exec(a))?a[1]:""};function fa(a){return u(function*(){var b=a.toDataURL();return b==="data:,"?a.cloneNode(!1):C(b)})}function ha(a,b){return u(function*(){if(a.currentSrc){var d=document.createElement("canvas");let c=d.getContext("2d");d.width=a.clientWidth;d.height=a.clientHeight;c==null||c.drawImage(a,0,0,d.width,d.height);d=d.toDataURL();return C(d)}d=a.poster;d=yield I(d,J[K(d).toLowerCase()]||"",b);return C(d)})}
+function ia(a,b){return u(function*(){try{let d;if(a==null?0:(d=a.contentDocument)==null?0:d.body)return yield L(a.contentDocument.body,b,!0)}catch(d){}return a.cloneNode(!1)})}function ja(a,b){return u(function*(){return D(a,HTMLCanvasElement)?fa(a):D(a,HTMLVideoElement)?ha(a,b):D(a,HTMLIFrameElement)?ia(a,b):a.cloneNode(a.tagName!=null&&a.tagName.toUpperCase()==="SVG")})}
+function ka(a,b,d){return u(function*(){if(b.tagName!=null&&b.tagName.toUpperCase()==="SVG")return b;var c=[];if(a.tagName!=null&&a.tagName.toUpperCase()==="SLOT"&&a.assignedNodes)c=w(a.assignedNodes());else{let e;if(D(a,HTMLIFrameElement)&&((e=a.contentDocument)==null?0:e.body))c=w(a.contentDocument.body.childNodes);else{let f;c=w(((f=a.shadowRoot)!=null?f:a).childNodes)}}if(c.length===0||D(a,HTMLVideoElement))return b;yield c.reduce((e,f)=>e.then(()=>L(f,d)).then(g=>{g&&b.appendChild(g)}),Promise.resolve());
+return b})}function la(a,b,d){var c=b.style;if(c){var e=window.getComputedStyle(a);e.cssText?(c.cssText=e.cssText,c.transformOrigin=e.transformOrigin):z(d).forEach(f=>{var g=e.getPropertyValue(f);f==="font-size"&&g.endsWith("px")&&(g=`${Math.floor(parseFloat(g.substring(0,g.length-2)))-.1}px`);D(a,HTMLIFrameElement)&&f==="display"&&g==="inline"&&(g="block");f==="d"&&b.getAttribute("d")&&(g=`path(${b.getAttribute("d")})`);c.setProperty(f,g,e.getPropertyPriority(f))})}}
+function ma(a,b){D(a,HTMLSelectElement)&&(b=Array.from(b.children).find(d=>a.value===d.getAttribute("value")))&&b.setAttribute("selected","")}
+function na(a,b){return u(function*(){var d=a.querySelectorAll?a.querySelectorAll("use"):[];if(d.length===0)return a;var c={};for(var e=0;e<d.length;e++){var f=d[e].getAttribute("xlink:href");if(f){let g=document.querySelector(f);a.querySelector(f)||!g||c[f]||(c[f]=yield L(g,b,!0))}}d=Object.values(c);if(d.length){c=document.createElementNS("http://www.w3.org/1999/xhtml","svg");c.setAttribute("xmlns","http://www.w3.org/1999/xhtml");c.style.position="absolute";c.style.width="0";c.style.height="0";
+c.style.overflow="hidden";c.style.display="none";e=document.createElementNS("http://www.w3.org/1999/xhtml","defs");c.appendChild(e);for(f=0;f<d.length;f++)e.appendChild(d[f]);a.appendChild(c)}return a})}
+function L(a,b,d){return u(function*(){return d||!b.filter||b.filter(a)?Promise.resolve(a).then(c=>ja(c,b)).then(c=>ka(a,c,b)).then(c=>{D(c,Element)&&(la(a,c,b),E(a,c,":before",b),E(a,c,":after",b),D(a,HTMLTextAreaElement)&&(c.textContent=a.value),D(a,HTMLInputElement)&&c.setAttribute("value",a.value),ma(a,c));return c}).then(c=>na(c,b)):null})};const M=/url\((['"]?)([^'"]+?)\1\)/g,oa=/url\([^)]+\)\s*format\((["']?)([^"']+)\1\)/g,pa=/src:\s*(?:url\([^)]+\)\s*format\([^)]+\)[,;]\s*)+/g;function qa(a){var b=[];a.replace(M,(d,c,e)=>{b.push(e);return d});return b.filter(d=>!F(d))}
+function ra(a,b,d,c){return u(function*(){try{let e=d?(new URL(b,d||void 0)).toString():b,f;f=yield I(e,J[K(b).toLowerCase()]||"",c);return a.replace(new RegExp(`(url\\(['"]?)(${b.replace(/([.*+?^${}()|\[\]\/\\])/g,"\\$1")})(['"]?\\))`,"g"),`$1${f}$3`)}catch(e){}return a})}function sa(a,{K:b}){return b?a.replace(pa,d=>{for(;;){let [c,,e]=oa.exec(d)||[];if(!e)return"";if(e===b)return`src: ${c};`}}):a}
+function N(a,b,d){return u(function*(){if(a.search(M)===-1)return a;var c=sa(a,d);return qa(c).reduce((e,f)=>e.then(g=>ra(g,f,b,d)),Promise.resolve(c))})};function O(a,b,d){return u(function*(){var c,e=(c=b.style)==null?void 0:c.getPropertyValue(a);return e?(c=yield N(e,null,d),b.style.setProperty(a,c,b.style.getPropertyPriority(a)),!0):!1})}function ta(a,b){return u(function*(){(yield O("background",a,b))||(yield O("background-image",a,b));(yield O("mask",a,b))||(yield O("-webkit-mask",a,b))||(yield O("mask-image",a,b))||(yield O("-webkit-mask-image",a,b))})}
+function ua(a,b){return u(function*(){var d=D(a,HTMLImageElement);if(d&&!F(a.src)||D(a,SVGImageElement)&&!F(a.href.baseVal)){var c=d?a.src:a.href.baseVal,e=yield I(c,J[K(c).toLowerCase()]||"",b);yield new Promise((f,g)=>{a.onload=f;a.onerror=b.h?(...h)=>{try{f(b.h(...h))}catch(l){g(l)}}:g;a.decode&&(a.decode=f);a.loading==="lazy"&&(a.loading="eager");d?(a.srcset="",a.src=e):a.href.baseVal=e})}})}
+function va(a,b){return u(function*(){var d=w(a.childNodes).map(c=>P(c,b));yield Promise.all(d).then(()=>a)})}function P(a,b){return u(function*(){D(a,Element)&&(yield ta(a,b),yield ua(a,b),yield va(a,b))})};const Q={};function R(a){return u(function*(){var b=Q[a];if(b!=null)return b;b=yield(yield fetch(a)).text();b={url:a,cssText:b};return Q[a]=b})}function S(a,b){return u(function*(){var d=a.cssText,c=/url\(["']?([^"')]+)["']?\)/g,e=(d.match(/url\([^)]+\)/g)||[]).map(f=>u(function*(){var g=f.replace(c,"$1");g.startsWith("https://")||(g=(new URL(g,a.url)).href);return G(g,b.l,({result:h})=>{d=d.replace(f,`url(${h})`);return[f,h]})}));return Promise.all(e).then(()=>d)})}
+function T(a){if(a==null)return[];var b=[];a=a.replace(/(\/\*[\s\S]*?\*\/)/gi,"");for(var d=RegExp("((@.*?keyframes [\\s\\S]*?){([\\s\\S]*?}\\s*?)})","gi");;){var c=d.exec(a);if(c===null)break;b.push(c[0])}a=a.replace(d,"");d=/@import[\s\S]*?url\([^)]*\)[\s\S]*?;/gi;for(c=RegExp("((\\s*?(?:\\/\\*[\\s\\S]*?\\*\\/)?\\s*?@media[\\s\\S]*?){([\\s\\S]*?)}\\s*?})|(([\\s\\S]*?){([\\s\\S]*?)})","gi");;){let e=d.exec(a);if(e===null)if(e=c.exec(a),e===null)break;else d.lastIndex=c.lastIndex;else c.lastIndex=
+d.lastIndex;b.push(e[0])}return b}
+function wa(a,b){return u(function*(){var d=[],c=[];a.forEach(e=>{if("cssRules"in e)try{w(e.cssRules||[]).forEach((f,g)=>{if(f.type===CSSRule.IMPORT_RULE){let h=g+1;f=R(f.href).then(l=>S(l,b)).then(l=>T(l).forEach(p=>{try{e.insertRule(p,p.startsWith("@import")?h+=1:e.cssRules.length)}catch(x){}})).catch(()=>{});c.push(f)}})}catch(f){let g=a.find(h=>h.href==null)||document.styleSheets[0];e.href!=null&&c.push(R(e.href).then(h=>S(h,b)).then(h=>T(h).forEach(l=>{g.insertRule(l,g.cssRules.length)})).catch(()=>
+{}))}});return Promise.all(c).then(()=>{a.forEach(e=>{if("cssRules"in e)try{w(e.cssRules||[]).forEach(f=>{d.push(f)})}catch(f){}});return d})})}function xa(a){return a.filter(b=>b.type===CSSRule.FONT_FACE_RULE).filter(b=>b.style.getPropertyValue("src").search(M)!==-1)}function ya(a,b){return u(function*(){if(a.ownerDocument==null)throw Error("Provided element is not within a Document");var d=yield wa(w(a.ownerDocument.styleSheets),b);return xa(d)})}
+function za(a){function b(c){(c.style.fontFamily||getComputedStyle(c).fontFamily).split(",").forEach(e=>{d.add(e.trim().replace(/["']/g,""))});Array.from(c.children).forEach(e=>{e instanceof HTMLElement&&b(e)})}var d=new Set;b(a);return d}function Aa(a,b){return u(function*(){var d=yield ya(a,b),c=za(a);return(yield Promise.all(d.filter(e=>c.has(e.style.fontFamily.trim().replace(/["']/g,""))).map(e=>N(e.cssText,e.parentStyleSheet?e.parentStyleSheet.href:null,b)))).join("\n")})}
+function Ba(a,b){return u(function*(){var d=b.m!=null?b.m:b.A?null:yield Aa(a,b);if(d){let c=document.createElement("style");c.appendChild(document.createTextNode(d));a.firstChild?a.insertBefore(c,a.firstChild):a.appendChild(c)}})};function Ca(a,b={}){return u(function*(){var {width:d,height:c}=B(a,b),e=yield L(a,b,!0);yield Ba(e,b);yield P(e,b);v(e,b);return yield ca(e,d,c)})}
+function Da(a,b={}){return u(function*(){var {width:d,height:c}=B(a,b),e=yield Ca(a,b);e=yield C(e);var f=document.createElement("canvas"),g=f.getContext("2d"),h=b.I||window.devicePixelRatio||1,l=b.j||d,p=b.i||c;f.width=l*h;f.height=p*h;!b.L&&(f.width>16384||f.height>16384)&&(f.width>16384&&f.height>16384?f.width>f.height?(f.height*=16384/f.width,f.width=16384):(f.width*=16384/f.height,f.height=16384):f.width>16384?(f.height*=16384/f.width,f.width=16384):(f.width*=16384/f.height,f.height=16384));
+f.style.width=`${l}`;f.style.height=`${p}`;b.backgroundColor&&(g.fillStyle=b.backgroundColor,g.fillRect(0,0,f.width,f.height));g.drawImage(e,0,0,f.width,f.height);return f})}function Ea(a,b={}){return u(function*(){return(yield Da(a,b)).toDataURL()})};const Fa=["gemini.google.com","corp.google.com","proxy.googlers.com"];function V(a){a=Number(a.replace(/px$/,""));return Number.isFinite(a)?a:0}function W(){return document.body.querySelectorAll('[class*="animate"]').length>0}function X(a,b){var d=document.createElement("canvas");d.width=a;d.height=b;return d.toDataURL("image/png")}const Y=X(1,1);
+function Z(a,b){return u(function*(){var d=Math.max(b?b.width:a.offsetWidth,1),c=Math.max(b?b.height:a.offsetHeight,1),e=HTMLCanvasElement.prototype.toDataURL;b&&(HTMLCanvasElement.prototype.toDataURL=function(f,g){var h;if(h=this.isConnected&&a.contains(this)){{let n=this.getBoundingClientRect();if(n.width===0||n.height===0)h=!1;else if(window.getComputedStyle(this).position==="fixed")h=n.bottom>0&&n.top<b.height&&n.right>0&&n.left<b.width;else{h=a.getBoundingClientRect();var l=n.top-h.top,p=n.left-
+h.left,x=n.right-h.left;h=n.bottom-h.top>b.scrollTop&&l<b.scrollTop+b.height&&x>b.scrollLeft&&p<b.scrollLeft+b.width}}h=!h}return h?"data:,":e.call(this,f,g)});try{let f=window.getComputedStyle(a),g=b?`${V(f.marginTop)-b.scrollTop}px`:void 0,h=b?`${V(f.marginLeft)-b.scrollLeft}px`:void 0,l=`${Math.max(a.offsetWidth,d)}px`,p,x=`${Math.max(a.offsetHeight,c+((p=b==null?void 0:b.scrollTop)!=null?p:0))}px`;return yield Ea(a,Object.assign({},{width:d,height:c,j:d,i:c},b?{style:{width:l,height:x,marginTop:g,
+marginLeft:h,marginBlockStart:g,marginInlineStart:h}}:{},{A:!0,filter:n=>{if(n.tagName==="IMG"){let U=n.getAttribute("src");if(!U||U.trim()===""||n.style.display==="none")return!1}return!0},o:Y,h:()=>Y}))}catch(f){return X(d,c)}finally{HTMLCanvasElement.prototype.toDataURL=e}})}
+function Ga(){return u(function*(){var a=document.body.offsetWidth,b=document.body.offsetHeight,d=document.body.cloneNode(!0);d.querySelectorAll('[class*="animate"]').forEach(c=>{c.classList.remove(...Array.from(c.classList).filter(e=>e.startsWith("animate")))});d.style.width=`${a}px`;d.style.height=`${b}px`;return d})}
+function Ha(a){return u(function*(){var b={width:window.innerWidth||document.documentElement.clientWidth||document.body.offsetWidth,height:window.innerHeight||document.documentElement.clientHeight||document.body.offsetHeight,scrollTop:window.scrollY||document.documentElement.scrollTop||document.body.scrollTop||0,scrollLeft:window.scrollX||document.documentElement.scrollLeft||document.body.scrollLeft||0},d=document.body;if(W()){let c=yield Ga();d=c;document.body.appendChild(c)}b=yield Z(d,b);W()&&
+document.body.removeChild(d);window.parent.postMessage({type:"SEND_SCREENSHOT",image:b,topOffset:0},a.origin)})}function Ia(a){return u(function*(){var b={type:"SEND_SCREENSHOT_FOR_DATA_VISUALIZATION",image:yield Z(document.body),topOffset:0};window.parent.postMessage(b,a.origin)})}window.addEventListener("message",a=>u(function*(){if(Fa.some(d=>a.origin.includes(d))){var b=a.data;b&&(b.type==="MAKE_SCREENSHOT"&&(yield Ha(a)),b.type==="MAKE_SCREENSHOT_FOR_DATA_VISUALIZATION"&&(yield Ia(a)))}}));
+})();</script><script data-bard-client-injected="true">(function() {
+  // Ensure this script is executed only once
+  if (window.firebaseAuthBridgeScriptLoaded) {
+    return;
+  }
+  window.firebaseAuthBridgeScriptLoaded = true;
+
+  let nextTokenPromiseId = 0;
+
+  // Stores { resolve, reject } for ongoing token requests
+  const pendingTokenPromises = {};
+
+  // Listen for messages from the Host Application
+  window.addEventListener('message', function(event) {
+
+    const messageData = event.data;
+
+  if (messageData && messageData.type === 'RESOLVE_NEW_FIREBASE_TOKEN') {
+      const { success, token, error, promiseId } = messageData ?? {};
+      if (pendingTokenPromises[promiseId]) {
+        if (success) {
+          pendingTokenPromises[promiseId].resolve(token);
+        } else {
+          pendingTokenPromises[promiseId].reject(new Error(error || 'Token refresh failed from host.'));
+        }
+        delete pendingTokenPromises[promiseId];
+      }
+    }
+  });
+
+  // Expose a function for the Generated App to request a new Firebase token
+  window.requestNewFirebaseToken = function() {
+    const currentPromiseId = nextTokenPromiseId++;
+    const promise = new Promise((resolve, reject) => {
+      pendingTokenPromises[currentPromiseId] = { resolve, reject };
+    });
+    if (window.parent && window.parent !== window) {
+      window.parent.postMessage({
+        type: 'REQUEST_NEW_FIREBASE_TOKEN',
+        promiseId: currentPromiseId
+      }, '*');
+    } else {
+      pendingTokenPromises[currentPromiseId].reject(new Error('No parent window to request token from.'));
+      delete pendingTokenPromises[currentPromiseId];
+    }
+    return promise;
+  };
+})();</script><script data-bard-client-injected="true">
+let realOriginalGetUserMedia = null;
+if (navigator.mediaDevices && navigator.mediaDevices.getUserMedia) {
+  realOriginalGetUserMedia = navigator.mediaDevices.getUserMedia.bind(navigator.mediaDevices);
+}
+
+(function() {
+  if (navigator.mediaDevices && navigator.mediaDevices.__proto__) {
+    try {
+      Object.defineProperty(navigator.mediaDevices.__proto__, 'getUserMedia', {
+        get: function() {
+          return undefined; // Or throw an error
+        },
+        configurable: false
+      });
+    } catch (error) {
+      console.error("Error defining prototype getter:", error);
+    }
+  }
+})();
+
+(function() {
+  const pendingMediaResolvers = {};
+  let nextMediaPromiseId = 0;
+
+  function requestMediaPermissions(constraints) {
+    const mediaPromiseId = nextMediaPromiseId++;
+    const promise = new Promise((resolve, reject) => {
+      pendingMediaResolvers[mediaPromiseId] = (granted) => {
+        delete pendingMediaResolvers[mediaPromiseId];
+        resolve(granted);
+      };
+    });
+
+    window.parent.postMessage({
+      type: 'requestMediaPermission',
+      constraints: constraints,
+      promiseId: mediaPromiseId,
+    }, '*');
+
+    return promise;
+  }
+
+  let originalGetUserMedia = realOriginalGetUserMedia;
+
+  function interceptGetUserMedia() {
+    if (navigator.mediaDevices) {
+      Object.defineProperty(navigator.mediaDevices, 'getUserMedia', {
+        value: function(constraints) {
+          return requestMediaPermissions(constraints).then((granted) => {
+            if (granted) {
+              if (originalGetUserMedia) {
+                return originalGetUserMedia(constraints);
+              } else {
+                throw new Error("Original getUserMedia not available.");
+              }
+            } else {
+              throw new DOMException('Permission denied', 'NotAllowedError');
+            }
+          });
+        },
+        writable: false,
+        configurable: false
+      });
+    }
+  }
+
+  interceptGetUserMedia();
+
+  const observer = new MutationObserver(function(mutationsList, observer) {
+    for (const mutation of mutationsList) {
+      if (mutation.type === 'reconfigured' && mutation.name === 'getUserMedia' && mutation.object === navigator.mediaDevices) {
+        interceptGetUserMedia();
+      } else if (mutation.type === 'attributes' && mutation.attributeName === 'getUserMedia' && mutation.target === navigator.mediaDevices) {
+        interceptGetUserMedia();
+      } else if (mutation.type === 'childList' && mutation.addedNodes) {
+        mutation.addedNodes.forEach(node => {
+          if (node === navigator.mediaDevices) {
+            interceptGetUserMedia();
+          }
+        });
+      }
+    }
+  });
+
+  function interceptSpeechRecognition() {
+    if (!window.SpeechRecognition && !window.webkitSpeechRecognition) {
+      return;
+    }
+
+    const OriginalSpeechRecognition = window.SpeechRecognition || window.webkitSpeechRecognition;
+
+    const SpeechRecognitionWrapper = function(...args) {
+      const recognizer = new OriginalSpeechRecognition(...args);
+      const originalStart = recognizer.start.bind(recognizer);
+
+      recognizer.start = function() {
+        requestMediaPermissions({ audio: true }).then(granted => {
+          if (granted) {
+            originalStart();
+          } else {
+            const errorEvent = new SpeechRecognitionErrorEvent('error');
+            errorEvent.error = 'not-allowed'; // This is the standard error for permission denial.
+            recognizer.dispatchEvent(errorEvent);
+          }
+        });
+      };
+
+      return recognizer;
+    };
+
+    SpeechRecognitionWrapper.prototype = OriginalSpeechRecognition.prototype;
+    SpeechRecognitionWrapper.prototype.constructor = SpeechRecognitionWrapper;
+
+    if (window.SpeechRecognition) {
+      window.SpeechRecognition = SpeechRecognitionWrapper;
+    }
+    if (window.webkitSpeechRecognition) {
+      window.webkitSpeechRecognition = SpeechRecognitionWrapper;
+    }
+  }
+
+  interceptSpeechRecognition();
+
+  window.addEventListener('message', function(event) {
+    if (event.data) {
+      if (event.data.type === 'resolveMediaPermission') {
+        const { promiseId, granted } = event.data;
+        if (pendingMediaResolvers[promiseId]) {
+          pendingMediaResolvers[promiseId](granted);
+        }
+      }
+    }
+  });
+
+})();</script><script ws-interception-config="{&quot;parentOrigin&quot;:&quot;https://gemini.google.com&quot;,&quot;proxiedDomains&quot;:[]}" data-bard-client-injected="true">(function(){'use strict';var u=typeof Object.defineProperties=="function"?Object.defineProperty:function(b,d,e){if(b==Array.prototype||b==Object.prototype)return b;b[d]=e.value;return b};function v(b){b=["object"==typeof globalThis&&globalThis,b,"object"==typeof window&&window,"object"==typeof self&&self,"object"==typeof global&&global];for(var d=0;d<b.length;++d){var e=b[d];if(e&&e.Math==Math)return e}throw Error("Cannot find global object");}var w=v(this);
+function y(b,d){if(d)a:{var e=w;b=b.split(".");for(var h=0;h<b.length-1;h++){var k=b[h];if(!(k in e))break a;e=e[k]}b=b[b.length-1];h=e[b];d=d(h);d!=h&&d!=null&&u(e,b,{configurable:!0,writable:!0,value:d})}}function z(b){function d(h){return b.next(h)}function e(h){return b.throw(h)}return new Promise(function(h,k){function m(n){n.done?h(n.value):Promise.resolve(n.value).then(d,e).then(m,k)}m(b.next())})}y("globalThis",function(b){return b||w});/*
+
+ Copyright The Closure Library Authors.
+ SPDX-License-Identifier: Apache-2.0
+*/
+function A(b,d){function e(){}e.prototype=d.prototype;b.j=d.prototype;b.prototype=new e;b.prototype.constructor=b;b.h=function(h,k,m){for(var n=Array(arguments.length-2),p=2;p<arguments.length;p++)n[p-2]=arguments[p];return d.prototype[k].apply(h,n)}};function B(b,d,e="*"){function h(a){if(typeof a==="string")return F.encode(a).buffer;if(a instanceof ArrayBuffer)return a.slice(0);if(ArrayBuffer.isView(a))return a.buffer.slice(a.byteOffset,a.byteOffset+a.byteLength);throw Error("Invalid data type");}function k(a){a=h(a);var f={type:"send",data:new Uint8Array(a)},g;(g=r)==null||g.postMessage(f,[a])}function m(){if(!r)throw Error("Data port not captured yet.");r.onmessage=a=>{if(a.data.type==="message"){a=new MessageEvent("message",{data:G.decode(a.data.data)});
+let f;(f=c.onmessage)==null||f.call(c,a);c.dispatchEvent(a)}}}function n(){if(!t)throw Error("Control port not captured yet.");t.onmessage=a=>{switch(a.data.type){case "open":l=1;var f=new Event("open"),g;(g=c.onopen)==null||g.call(c,f);c.dispatchEvent(f);q.forEach(H=>{k(H)});q=[];break;case "close":g=a.data;l=3;g=new CloseEvent("close",{code:g.code,reason:g.reason,wasClean:g.wasClean});(f=c.onclose)==null||f.call(c,g);c.dispatchEvent(g);break;case "error":l=3;f=new Event("error");let x;(x=c.onerror)==
+null||x.call(c,f);c.dispatchEvent(f)}}}function p(a){return z(function*(){var f=new MessageChannel;t=f.port1;var g=new MessageChannel;r=g.port1;n();m();window.parent.postMessage({type:"websocket_open",portOrdering:["control","data"],url:b,protocols:a||[],connectionId:I},e,[f.port2,g.port2])}())}var c=Reflect.construct(EventTarget,[],new.target);c.CONNECTING=0;c.OPEN=1;c.CLOSING=2;c.CLOSED=3;c.url=b;c.binaryType="arraybuffer";c.protocol="";c.i="";var l=0,t=null,r=null,q=[],F=new TextEncoder,G=new TextDecoder;
+c.onopen=null;c.onmessage=null;c.onclose=null;c.onerror=null;Object.defineProperty(c,"readyState",{get:()=>l,enumerable:!0,configurable:!0});Object.defineProperty(c,"bufferedAmount",{get:()=>{var a=0;q.forEach(f=>{a+=typeof f==="string"?f.length:f.byteLength});return a},enumerable:!0,configurable:!0});var I=function(){var a;return((a=globalThis.crypto)==null?0:a.randomUUID)?globalThis.crypto.randomUUID():"xxxxxxxx-xxxx-4xxx-yxxx-xxxxxxxxxxxx".replace(/[xy]/g,f=>{var g=Math.random()*16|0;return(f===
+"x"?g:g&3|8).toString(16)})}();c.send=a=>{if(l===1)a instanceof Blob?a.arrayBuffer().then(f=>{k(f)}):k(a);else if(l===0)if(typeof a==="string")q.push(a);else if(a instanceof ArrayBuffer||ArrayBuffer.isView(a))q.push(h(a));else throw Error("Sending Blob is not supported before the connection is open.");else console.debug("WebSocket send called in CLOSING or CLOSED state; ignored.")};c.close=(a=1E3,f="")=>{if(l!==2&&l!==3){l=2;a={type:"close",code:a,reason:f,wasClean:a===1E3};var g;(g=t)==null||g.postMessage(a)}};
+Promise.resolve().then(()=>p(d));return c}A(B,EventTarget);var C=document.currentScript,D=C==null?void 0:C.getAttribute("ws-interception-config");if(!D)throw Error("WebSocket Interceptor: Missing ws-interception-config attribute in the script tag.");var E=JSON.parse(D);if(!E.parentOrigin||typeof E.parentOrigin!=="string")throw Error("WebSocket Interceptor: Invalid parentOrigin in ws-interception-config");
+(function(b){var d=Object.getOwnPropertyDescriptor(window,"WebSocket");if(!d||d.writable||d.configurable)d=Object.assign(function(e,h){try{let k=(new URL(e)).hostname;if(b.proxiedDomains.some(m=>k===m||k.endsWith(`.${m}`)))return new B(e,h,b.parentOrigin)}catch(k){throw window.parent.postMessage({type:"websocket_blocked",url:e,reason:"blocked_invalid_url"},b.parentOrigin),new DOMException(`WebSocket connection to '${e}' is not allowed in Canvas.`,"SecurityError");}window.parent.postMessage({type:"websocket_blocked",
+url:e,reason:"blocked_domain_not_allowlisted"},b.parentOrigin);throw new DOMException(`WebSocket connection to '${e}' is not allowed in Canvas.`,"SecurityError");},{CONNECTING:0,OPEN:1,CLOSING:2,CLOSED:3}),Object.defineProperty(window,"WebSocket",{value:d,writable:!1,configurable:!1})})({proxiedDomains:E.proxiedDomains||[],parentOrigin:E.parentOrigin});}).call(this);
+</script><script data-bard-client-injected="true">((function(modelInformation) {
+  const originalFetch = window.fetch;
+  // TODO: b/421908508 - Move these out of the script and match all generative AI model calls.
+  let googleLlmBaseApiUrls = [
+    'https://generativelanguage.googleapis.com/v1beta/models/' + modelInformation.textModelName + ':streamGenerateContent',
+    'https://generativelanguage.googleapis.com/v1beta/models/' + modelInformation.textModelName + ':generateContent',
+    'https://generativelanguage.googleapis.com/v1beta/models/' + modelInformation.imageModelName + ':predict',
+    'https://generativelanguage.googleapis.com/v1beta/models/' + modelInformation.imageModelName + ':predictLongRunning',
+    'https://generativelanguage.googleapis.com/v1beta/models/' + modelInformation.imageEditModelName + ':generateContent',
+    'https://generativelanguage.googleapis.com/v1beta/models/' + modelInformation.imageTransformModelName + ':generateContent',
+    'https://generativelanguage.googleapis.com/v1beta/models/' + modelInformation.videoModelName + ':predict',
+    'https://generativelanguage.googleapis.com/v1beta/models/' + modelInformation.videoModelName + ':predictLongRunning',
+    'https://generativelanguage.googleapis.com/v1beta/models/' + modelInformation.ttsModelName + ':generateContent',
+  ];
+  modelInformation.deprecatedTextModelNames.forEach((modelName) => {
+    googleLlmBaseApiUrls.push(
+      'https://generativelanguage.googleapis.com/v1beta/models/' + modelName + ':streamGenerateContent',
+      'https://generativelanguage.googleapis.com/v1beta/models/' + modelName + ':generateContent',
+    );
+  });
+  modelInformation.deprecatedImageModelNames.forEach((modelName) => {
+    googleLlmBaseApiUrls.push(
+      'https://generativelanguage.googleapis.com/v1beta/models/' + modelName + ':predict',
+      'https://generativelanguage.googleapis.com/v1beta/models/' + modelName + ':predictLongRunning',
+      'https://generativelanguage.googleapis.com/v1beta/models/' + modelName + ':generateContent',
+      'https://generativelanguage.googleapis.com/v1beta/models/' + modelName + ':streamGenerateContent',
+    );
+  });
+  modelInformation.deprecatedGenerateImageModelNames.forEach((modelName) => {
+    googleLlmBaseApiUrls.push(
+      'https://generativelanguage.googleapis.com/v1beta/models/' + modelName + ':generateContent',
+      'https://generativelanguage.googleapis.com/v1beta/models/' + modelName + ':streamGenerateContent',
+    );
+  });
+  modelInformation.deprecatedImageTransformModelNames.forEach((modelName) => {
+    googleLlmBaseApiUrls.push(
+      'https://generativelanguage.googleapis.com/v1beta/models/' + modelName + ':generateContent',
+      'https://generativelanguage.googleapis.com/v1beta/models/' + modelName + ':streamGenerateContent',
+    );
+  });
+
+  const pendingFetchResolvers = {};
+  let nextPromiseId = 0;
+
+  function handleStringInput(input, optionsArgument) {
+    const actualUrl = input;
+    const fetchCallArgs = [actualUrl, optionsArgument];
+    const effectiveOptions = optionsArgument || {};
+    const bodyForApiKeyCheck = effectiveOptions.body;
+    const bodyForPostMessage = effectiveOptions.body;
+    return { actualUrl, fetchCallArgs, effectiveOptions, bodyForApiKeyCheck, bodyForPostMessage };
+  }
+
+  function handleRequestInput(input, optionsArgument) {
+    const actualUrl = input.url;
+    const fetchCallArgs = [input, optionsArgument];
+    const effectiveOptions = { method: input.method, headers: new Headers(input.headers) };
+    let bodyForApiKeyCheck;
+    let bodyForPostMessage;
+
+    if (optionsArgument) {
+      if (optionsArgument.method) effectiveOptions.method = optionsArgument.method;
+      if (optionsArgument.headers) effectiveOptions.headers = new Headers(optionsArgument.headers);
+      if ('body' in optionsArgument) {
+        bodyForApiKeyCheck = optionsArgument.body;
+        bodyForPostMessage = optionsArgument.body;
+      } else {
+        bodyForApiKeyCheck = undefined;
+        bodyForPostMessage = input.body;
+      }
+    } else {
+      bodyForApiKeyCheck = undefined;
+      bodyForPostMessage = input.body;
+    }
+    return { actualUrl, fetchCallArgs, effectiveOptions, bodyForApiKeyCheck, bodyForPostMessage };
+  }
+
+  window.fetch = function(input, optionsArgument) {
+    let actualUrl;
+    let fetchCallArgs;
+    let effectiveOptions = {};
+    let bodyForApiKeyCheck;
+    let bodyForPostMessage;
+
+    if (typeof input === 'string') {
+      ({actualUrl, fetchCallArgs, effectiveOptions, bodyForApiKeyCheck, bodyForPostMessage} = handleStringInput(input, optionsArgument));
+    } else if (input instanceof Request) {
+      ({actualUrl, fetchCallArgs, effectiveOptions, bodyForApiKeyCheck, bodyForPostMessage} = handleRequestInput(input, optionsArgument));
+    } else {
+      return originalFetch.apply(window, [input, optionsArgument]);
+    }
+
+    effectiveOptions.method = effectiveOptions.method || 'GET';
+    if (!effectiveOptions.headers) {
+      effectiveOptions.headers = new Headers();
+    }
+
+
+    if (typeof actualUrl === 'string' && googleLlmBaseApiUrls.some((url) => actualUrl.startsWith(url))) {
+      let apiKeyIsNull = true;
+
+      const regex = new RegExp("models/([^:]+)");
+      const modelNameMatch = actualUrl.match(regex);
+      const modelName = modelNameMatch ? modelNameMatch[1] : 'unspecified';
+
+
+      try {
+        const urlObject = new URL(actualUrl);  // Use URL object for robust parsing
+        const apiKeyParam = urlObject.searchParams.get('key');
+        if (apiKeyParam) {
+          apiKeyIsNull = false;
+        }
+      } catch (e) {
+        // Continue checks even if URL parsing fails
+      }
+
+      if (apiKeyIsNull && effectiveOptions.headers) {
+        const h = new Headers(effectiveOptions.headers);
+        const apiKeyHeaderValue = h.get('X-API-Key') || h.get('x-api-key');
+        if (apiKeyHeaderValue) {
+          apiKeyIsNull = false;
+          return originalFetch.apply(window, fetchCallArgs);
+        }
+      }
+
+      if (apiKeyIsNull && effectiveOptions.method && ['POST', 'PUT', 'PATCH'].includes(effectiveOptions.method.toUpperCase()) && typeof bodyForApiKeyCheck === 'string') {
+        try {
+          const bodyData = JSON.parse(bodyForApiKeyCheck);
+          if (bodyData && bodyData.apiKey) {
+            apiKeyIsNull = false;
+            return originalFetch.apply(window, fetchCallArgs);
+          }
+        } catch (e) {
+          // Ignore JSON parsing errors
+        }
+      }
+
+      if(apiKeyIsNull) {
+        const promiseId = nextPromiseId++;
+        const promise = new Promise((resolve) => {
+          pendingFetchResolvers[promiseId] = (resolvedResponse) => {
+            delete pendingFetchResolvers[promiseId];
+            resolve(resolvedResponse);
+          };
+        });
+
+        let serializedBodyForPostMessage;
+        if (typeof bodyForPostMessage === 'string' || bodyForPostMessage == null) {
+            serializedBodyForPostMessage = bodyForPostMessage;
+        } else if (bodyForPostMessage instanceof ReadableStream) {
+            serializedBodyForPostMessage = null;
+        } else {
+            try {
+                serializedBodyForPostMessage = JSON.stringify(bodyForPostMessage);
+            } catch (e) {
+                serializedBodyForPostMessage = null;
+            }
+        }
+
+        const messageOptions = {
+            method: effectiveOptions.method,
+            headers: Object.fromEntries(new Headers(effectiveOptions.headers).entries()),
+            body: serializedBodyForPostMessage
+        };
+
+        window.parent.postMessage({
+          type: 'requestFetch',
+          url: actualUrl,
+          modelName: modelName,
+          options: messageOptions,
+          promiseId: promiseId,
+        }, '*');
+
+        return promise;
+      }
+      return originalFetch.apply(window, fetchCallArgs);
+    }
+    return originalFetch.apply(window, fetchCallArgs);
+  };
+
+  window.addEventListener('message', function(event) {
+    if (event.data && event.data.type === 'resolveFetch') {
+      const { promiseId, response } = event.data;
+      if (pendingFetchResolvers[promiseId]) {
+        try {
+          const reconstructedResponse = new Response(response.body, {
+            status: response.status,
+            statusText: response.statusText,
+            headers: new Headers(response.headers),
+          });
+          pendingFetchResolvers[promiseId](reconstructedResponse);
+        } catch (error) {
+          pendingFetchResolvers[promiseId](new Response(null, { status: 500, statusText: "Interceptor Response Reconstruction Error" }));
+        }
+      }
+    }
+  });
+
+}))({"textModelName":"gemini-3-flash-preview","imageModelName":"imagen-4.0-generate-001","imageEditModelName":"gemini-3.1-flash-image","imageTransformModelName":"gemini-3-pro-image","videoModelName":"veo-2.0-generate-001","ttsModelName":"gemini-2.5-flash-preview-tts","deprecatedTextModelNames":["gemini-2.0-flash","gemini-2.5-flash","gemini-2.5-flash-preview-04-17","gemini-2.5-flash-preview-05-20","gemini-2.5-flash-preview-09-2025"],"deprecatedImageModelNames":["imagen-3.0-generate-001","imagen-3.0-generate-002"],"deprecatedGenerateImageModelNames":["gemini-2.5-flash-image-preview","gemini-2.5-flash-image","gemini-3.1-flash-image-preview"],"deprecatedImageTransformModelNames":["gemini-3-pro-image-preview-11-2025"]})</script><script data-bard-client-injected="true">(function() {
+  function normalizeSlug(str) {
+    try {
+      return str
+        .trim()
+        .toLowerCase()
+        .replace(/[^p{L}p{N}s_-]/gu, '')
+        .replace(/s+/g, '-');
+    } catch (e) {
+      return str
+        .trim()
+        .toLowerCase()
+        .replace(/[^a-z0-9s_-]/g, '')
+        .replace(/s+/g, '-');
+    }
+  }
+
+  function findTargetElement(hash) {
+    if (!hash || hash === '#') {
+      return null;
+    }
+    const rawId = hash.startsWith('#') ? hash.slice(1) : hash;
+    let decodedId = rawId;
+    try {
+      decodedId = decodeURIComponent(rawId);
+    } catch (e) {
+      // Ignore URI malformed errors.
+    }
+
+    // 1. Direct ID match (raw and decoded).
+    let target = document.getElementById(rawId) || document.getElementById(decodedId);
+    if (target) {
+      return target;
+    }
+
+    // 2. Name attribute match (<a name="...">).
+    try {
+      if (typeof CSS !== 'undefined' && CSS.escape) {
+        target =
+          document.querySelector('[name="' + CSS.escape(rawId) + '"]') ||
+          document.querySelector('[name="' + CSS.escape(decodedId) + '"]');
+      } else {
+        const namedElements = document.getElementsByName(rawId);
+        if (namedElements && namedElements.length > 0) {
+          return namedElements[0];
+        }
+      }
+    } catch (e) {
+      // Ignore querySelector syntax errors.
+    }
+    if (target) {
+      return target;
+    }
+
+    // 3. Match heading text by slug (for Markdown TOCs where headings lack explicit IDs).
+    const targetSlug = normalizeSlug(decodedId);
+    if (targetSlug) {
+      for (const heading of document.querySelectorAll('h1, h2, h3, h4, h5, h6')) {
+        if (normalizeSlug(heading.textContent || '') === targetSlug) {
+          return heading;
+        }
+      }
+    }
+
+    return null;
+  }
+
+  document.addEventListener('click', function(event) {
+    const target = event.target;
+    const anchor = target && typeof target.closest === 'function' ? target.closest('a') : null;
+    if (!anchor) {
+      return;
+    }
+
+    const href = anchor.getAttribute('href');
+    if (
+      !href ||
+      href.trim().toLowerCase().startsWith('javascript:') ||
+      anchor.hasAttribute('download')
+    ) {
+      return;
+    }
+
+    // Check if the link is an in-page hash / anchor link.
+    if (href.startsWith('#')) {
+      event.preventDefault();
+      const targetElement = findTargetElement(href);
+      if (targetElement) {
+        targetElement.scrollIntoView({behavior: 'smooth', block: 'start'});
+      }
+      return;
+    }
+
+    // Check if the URL has the same origin/pathname but with a hash.
+    try {
+      const url = new URL(anchor.href, window.location.href);
+      if (
+        url.hash &&
+        url.origin === window.location.origin &&
+        url.pathname === window.location.pathname
+      ) {
+        event.preventDefault();
+        const targetElement = findTargetElement(url.hash);
+        if (targetElement) {
+          targetElement.scrollIntoView({behavior: 'smooth', block: 'start'});
+        }
+        return;
+      }
+    } catch (e) {
+      // Fall through if URL parsing fails.
+    }
+
+    // For all external or full navigation links, prevent iframe-level navigation
+    // (which breaks in AGSA WebView or sandboxed iframes) and ensure they open
+    // safely in a new tab/window.
+    if (anchor.target !== '_blank') {
+      event.preventDefault();
+      window.open(anchor.href, '_blank', 'noopener,noreferrer');
+    }
+  }, {capture: true});
+})();</script><script data-bard-client-injected="true">(function(){'use strict';function a(){window.parent.postMessage({type:"interaction"},"*")}window.addEventListener("click",a,{capture:!0,passive:!0});window.addEventListener("touchstart",a,{capture:!0,passive:!0});window.addEventListener("keydown",a,{capture:!0,passive:!0});}).call(this);
+</script><script data-bard-client-injected="true">(function() {
+  const originalConsoleLog = console.log;
+  const originalConsoleError = console.error;
+
+    /**
+   * Normalizes an error event or a promise rejection reason into a structured error object.
+   * @param {*} errorEventOrReason The error object or reason.
+   * @return {object} Structured error data { message, name, stack }.
+   */
+  function getErrorObject(errorEventOrReason) {
+    if (errorEventOrReason instanceof Error) {
+      return {
+        message: errorEventOrReason.message,
+        name: errorEventOrReason.name,
+        stack: errorEventOrReason.stack,
+      };
+    }
+    // Fallback for non-Error objects.
+    try {
+      return {
+        message: JSON.stringify(errorEventOrReason),
+        name: 'UnknownErrorType',
+        stack: null,
+      };
+    } catch (e) {
+      return {
+        message: String(errorEventOrReason),
+        name: 'UnknownErrorTypeNonStringifiable',
+        stack: null,
+      };
+    }
+  }
+
+  /**
+   * Converts an array of arguments (from log/error) into a single string.
+   * Handles Error objects specially to include their message and stack.
+   * @param {Array<*>} args - Arguments passed to console methods.
+   * @return {string} A string representation of the arguments.
+   */
+  function stringifyArgs(args) {
+    return args
+      .map((arg) => {
+        if (arg instanceof Error) {
+          const {message, stack} = arg;
+          return `Error: ${message}${stack ? ('\nStack: ' + stack) : ''}`;
+        }
+        if (typeof arg === 'object' && arg !== null) {
+          try {
+            return JSON.stringify(arg);
+          } catch (error) {
+            return '[Circular Object]';
+          }
+        } else {
+          return String(arg);
+        }
+      })
+      .join(' ');
+  }
+
+  console.log = function(...args) {
+    const logString = stringifyArgs(args);
+    window.parent.postMessage({ type: 'log', message: logString }, '*');
+    originalConsoleLog.apply(console, args);
+  };
+
+  console.error = function(...args) {
+    let errorData;
+    if (args.length > 0 && args[0] instanceof Error) {
+      const err = args[0];
+      // If the first arg is an Error, capture its details.
+      errorData = {
+        type: 'error',
+        source: 'CONSOLE_ERROR',
+        ...getErrorObject(err),
+        rawArgsString: stringifyArgs(args.slice(1)),
+        timestamp: new Date().toISOString(),
+      };
+    } else {
+      // If not an Error object, treat all args as a general error message.
+      errorData = {
+        type: 'error',
+        source: 'CONSOLE_ERROR',
+        message: stringifyArgs(args),
+        name: 'ConsoleLoggedError',
+        stack: null,
+        timestamp: new Date().toISOString(),
+      };
+    }
+    window.parent.postMessage(errorData, '*');
+    originalConsoleError.apply(console, args);
+  };
+
+  // Listen for global unhandled synchronous errors.
+  window.addEventListener('error', function(event) {
+    const errorDetails = event.error ? getErrorObject(event.error) : {
+      message: event.message,
+      name: 'GlobalError',
+      stack: null,
+      filename: event.filename,
+      lineno: event.lineno,
+      colno: event.colno,
+    };
+
+    window.parent.postMessage({
+      type: 'error',
+      source: 'global',
+      ...errorDetails,
+      message: errorDetails.message || event.message,
+      timestamp: new Date().toISOString(),
+    }, '*');
+  });
+
+  // Listen for unhandled promise rejections (asynchronous errors).
+  window.addEventListener('unhandledrejection', function(event) {
+    const errorDetails = getErrorObject(event.reason);
+
+    window.parent.postMessage({
+      type: 'error',
+      source: 'unhandledrejection',
+      ...errorDetails,
+      message: errorDetails.message || 'Unhandled Promise Rejection',
+      timestamp: new Date().toISOString(),
+    }, '*');
+  });
+
+})();</script>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=5.0, viewport-fit=cover">
+  <meta name="apple-mobile-web-app-capable" content="yes">
+  <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
+  <meta name="apple-mobile-web-app-title" content="HiFi Cockpit">
+  <meta name="theme-color" content="#0d0f12">
+  <title>HiFi &amp; Apple Music Entscheidungs-Cockpit</title>
+  <style>
+    /* ==========================================================================
+       AUDIOPHILE DARK MODE DESIGN SYSTEM (100% OFFLINE & STANDALONE)
+       ========================================================================== */
+    :root {
+      --bg-primary: #0d0f12;
+      --bg-secondary: #15181e;
+      --bg-card: #1b1f27;
+      --bg-card-hover: #222731;
+      --bg-elevated: #262c36;
+      --border-subtle: rgba(255, 255, 255, 0.08);
+      --border-gold: rgba(212, 163, 115, 0.35);
+      --border-atmos: rgba(250, 36, 60, 0.4);
+
+      --text-primary: #f3f4f6;
+      --text-secondary: #9ca3af;
+      --text-muted: #6b7280;
+
+      --accent-gold: #d4a373;
+      --accent-gold-light: #e9c49a;
+      --accent-gold-bg: rgba(212, 163, 115, 0.12);
+
+      --accent-apple: #fa243c;
+      --accent-apple-bg: rgba(250, 36, 60, 0.14);
+
+      --accent-atmos: #38bdf8;
+      --accent-atmos-bg: rgba(56, 189, 248, 0.12);
+
+      --accent-stereo: #10b981;
+      --accent-stereo-bg: rgba(16, 185, 129, 0.12);
+
+      --accent-analog: #f59e0b;
+      --accent-analog-bg: rgba(245, 158, 11, 0.12);
+
+      --medal-gold: #fbbf24;
+      --medal-silver: #cbd5e1;
+      --medal-bronze: #d97706;
+
+      --radius-sm: 8px;
+      --radius-md: 12px;
+      --radius-lg: 16px;
+      --radius-xl: 20px;
+
+      --shadow-soft: 0 10px 30px -10px rgba(0, 0, 0, 0.6);
+      --font-sans: -apple-system, BlinkMacSystemFont, "SF Pro Display", "SF Pro Text", "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+      --font-mono: ui-monospace, "SF Mono", SFMono-Regular, Menlo, Monaco, Consolas, monospace;
+    }
+
+    * {
+      box-sizing: border-box;
+      margin: 0;
+      padding: 0;
+      -webkit-tap-highlight-color: transparent;
+    }
+
+    body {
+      background-color: var(--bg-primary);
+      background-image: 
+        radial-gradient(circle at 15% 0%, rgba(212, 163, 115, 0.07) 0%, transparent 40%),
+        radial-gradient(circle at 85% 10%, rgba(250, 36, 60, 0.05) 0%, transparent 35%);
+      color: var(--text-primary);
+      font-family: var(--font-sans);
+      line-height: 1.55;
+      min-height: 100vh;
+      padding-bottom: 60px;
+      overflow-x: hidden;
+    }
+
+    /* Container */
+    .app-container {
+      max-width: 1380px;
+      margin: 0 auto;
+      padding: 0 20px;
+    }
+
+    /* Header */
+    .app-header {
+      padding: 24px 0 20px;
+      border-bottom: 1px solid var(--border-subtle);
+      margin-bottom: 24px;
+    }
+
+    .header-top {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: space-between;
+      align-items: center;
+      gap: 16px;
+    }
+
+    .brand-group {
+      display: flex;
+      align-items: center;
+      gap: 14px;
+    }
+
+    .brand-icon {
+      width: 48px;
+      height: 48px;
+      border-radius: 14px;
+      background: linear-gradient(135deg, #262c36 0%, #15181e 100%);
+      border: 1px solid var(--border-gold);
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      font-size: 24px;
+      box-shadow: 0 4px 15px rgba(212, 163, 115, 0.15);
+      flex-shrink: 0;
+    }
+
+    .brand-title h1 {
+      font-size: clamp(1.25rem, 2.5vw, 1.65rem);
+      font-weight: 700;
+      letter-spacing: -0.02em;
+      color: var(--text-primary);
+      display: flex;
+      align-items: center;
+      gap: 10px;
+      flex-wrap: wrap;
+    }
+
+    .brand-subtitle {
+      font-size: 0.88rem;
+      color: var(--text-secondary);
+      margin-top: 2px;
+    }
+
+    .header-actions {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 10px;
+      align-items: center;
+    }
+
+    /* Buttons */
+    .btn {
+      display: inline-flex;
+      align-items: center;
+      justify-content: center;
+      gap: 8px;
+      padding: 10px 16px;
+      border-radius: var(--radius-md);
+      font-family: var(--font-sans);
+      font-size: 0.88rem;
+      font-weight: 600;
+      cursor: pointer;
+      transition: all 0.2s ease;
+      border: 1px solid transparent;
+      text-decoration: none;
+      min-height: 44px; /* Touch target size for iPad */
+    }
+
+    .btn-primary {
+      background: linear-gradient(135deg, var(--accent-gold) 0%, #b88655 100%);
+      color: #0d0f12;
+      box-shadow: 0 4px 14px rgba(212, 163, 115, 0.25);
+    }
+
+    .btn-primary:hover, .btn-primary:active {
+      background: linear-gradient(135deg, var(--accent-gold-light) 0%, var(--accent-gold) 100%);
+      transform: translateY(-1px);
+    }
+
+    .btn-secondary {
+      background-color: var(--bg-elevated);
+      color: var(--text-primary);
+      border-color: var(--border-subtle);
+    }
+
+    .btn-secondary:hover, .btn-secondary:active {
+      background-color: var(--bg-card-hover);
+      border-color: var(--border-gold);
+    }
+
+    .btn-apple {
+      background-color: var(--accent-apple-bg);
+      color: #ff6b7b;
+      border-color: var(--border-atmos);
+    }
+
+    .btn-apple:hover {
+      background-color: rgba(250, 36, 60, 0.24);
+    }
+
+    .btn-sm {
+      min-height: 36px;
+      padding: 6px 12px;
+      font-size: 0.8rem;
+      border-radius: var(--radius-sm);
+    }
+
+    /* Navigation Tabs */
+    .nav-tabs {
+      display: grid;
+      grid-template-columns: repeat(3, 1fr);
+      gap: 10px;
+      background-color: var(--bg-secondary);
+      padding: 6px;
+      border-radius: var(--radius-lg);
+      border: 1px solid var(--border-subtle);
+      margin-bottom: 24px;
+    }
+
+    @media (max-width: 768px) {
+      .nav-tabs {
+        grid-template-columns: 1fr;
+      }
+    }
+
+    .nav-tab {
+      background: transparent;
+      border: none;
+      color: var(--text-secondary);
+      padding: 12px 16px;
+      border-radius: var(--radius-md);
+      font-family: var(--font-sans);
+      font-size: 0.95rem;
+      font-weight: 600;
+      cursor: pointer;
+      transition: all 0.2s ease;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      gap: 8px;
+      min-height: 48px;
+      text-align: center;
+    }
+
+    .nav-tab:hover {
+      color: var(--text-primary);
+      background-color: rgba(255, 255, 255, 0.03);
+    }
+
+    .nav-tab.active {
+      background-color: var(--bg-card);
+      color: var(--accent-gold-light);
+      border: 1px solid var(--border-gold);
+      box-shadow: 0 4px 12px rgba(0, 0, 0, 0.3);
+    }
+
+    .tab-panel {
+      display: none;
+      animation: fadeIn 0.25s ease;
+    }
+
+    .tab-panel.active {
+      display: block;
+    }
+
+    @keyframes fadeIn {
+      from { opacity: 0; transform: translateY(4px); }
+      to { opacity: 1; transform: translateY(0); }
+    }
+
+    /* Filter Panel */
+    .filter-cockpit {
+      background-color: var(--bg-secondary);
+      border: 1px solid var(--border-subtle);
+      border-radius: var(--radius-xl);
+      padding: 20px;
+      margin-bottom: 24px;
+      box-shadow: var(--shadow-soft);
+    }
+
+    .filter-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(230px, 1fr));
+      gap: 16px;
+      margin-bottom: 16px;
+    }
+
+    .filter-group {
+      display: flex;
+      flex-direction: column;
+      gap: 6px;
+    }
+
+    .filter-label {
+      font-size: 0.78rem;
+      text-transform: uppercase;
+      letter-spacing: 0.06em;
+      color: var(--accent-gold);
+      font-weight: 700;
+      display: flex;
+      align-items: center;
+      gap: 6px;
+    }
+
+    .filter-input, .filter-select {
+      width: 100%;
+      background-color: var(--bg-card);
+      color: var(--text-primary);
+      border: 1px solid var(--border-subtle);
+      border-radius: var(--radius-md);
+      padding: 11px 14px;
+      font-family: var(--font-sans);
+      font-size: 0.92rem;
+      min-height: 44px;
+      outline: none;
+      transition: border-color 0.2s;
+    }
+
+    .filter-input:focus, .filter-select:focus {
+      border-color: var(--accent-gold);
+    }
+
+    .filter-bar-bottom {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: space-between;
+      align-items: center;
+      gap: 14px;
+      padding-top: 16px;
+      border-top: 1px solid var(--border-subtle);
+    }
+
+    .toggle-group {
+      display: flex;
+      flex-wrap: wrap;
+      align-items: center;
+      gap: 12px;
+    }
+
+    /* Segmented Control */
+    .segmented-control {
+      display: inline-flex;
+      background-color: var(--bg-primary);
+      padding: 4px;
+      border-radius: var(--radius-md);
+      border: 1px solid var(--border-subtle);
+    }
+
+    .segment-btn {
+      background: transparent;
+      border: none;
+      color: var(--text-secondary);
+      padding: 7px 13px;
+      border-radius: var(--radius-sm);
+      font-size: 0.82rem;
+      font-weight: 600;
+      cursor: pointer;
+      transition: all 0.15s;
+      min-height: 36px;
+    }
+
+    .segment-btn.active {
+      background-color: var(--bg-elevated);
+      color: var(--text-primary);
+      border: 1px solid var(--border-gold);
+    }
+
+    .results-counter {
+      font-size: 0.9rem;
+      color: var(--text-secondary);
+      font-weight: 500;
+    }
+
+    .results-counter strong {
+      color: var(--accent-gold-light);
+    }
+
+    /* Quick Preset Pills */
+    .quick-presets {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 8px;
+      margin-bottom: 16px;
+      align-items: center;
+    }
+
+    .preset-label {
+      font-size: 0.8rem;
+      color: var(--text-secondary);
+      margin-right: 4px;
+    }
+
+    .preset-pill {
+      background-color: var(--bg-card);
+      border: 1px solid var(--border-subtle);
+      color: var(--text-secondary);
+      padding: 6px 12px;
+      border-radius: 999px;
+      font-size: 0.8rem;
+      font-weight: 600;
+      cursor: pointer;
+      transition: all 0.2s;
+      min-height: 34px;
+      display: inline-flex;
+      align-items: center;
+      gap: 5px;
+    }
+
+    .preset-pill:hover, .preset-pill.active {
+      background-color: var(--accent-gold-bg);
+      color: var(--accent-gold-light);
+      border-color: var(--border-gold);
+    }
+
+    /* Scenario Cards Grid */
+    .scenarios-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fill, minmax(390px, 1fr));
+      gap: 20px;
+    }
+
+    @media (max-width: 500px) {
+      .scenarios-grid {
+        grid-template-columns: 1fr;
+      }
+    }
+
+    .scenario-card {
+      background-color: var(--bg-card);
+      border: 1px solid var(--border-subtle);
+      border-radius: var(--radius-xl);
+      padding: 22px;
+      display: flex;
+      flex-direction: column;
+      gap: 16px;
+      transition: transform 0.2s ease, border-color 0.2s ease;
+      box-shadow: var(--shadow-soft);
+      position: relative;
+      overflow: hidden;
+    }
+
+    .scenario-card:hover {
+      border-color: var(--border-gold);
+      transform: translateY(-2px);
+    }
+
+    .card-header {
+      display: flex;
+      justify-content: space-between;
+      align-items: flex-start;
+      gap: 12px;
+    }
+
+    .scenario-title {
+      font-size: 1.2rem;
+      font-weight: 700;
+      color: var(--text-primary);
+      line-height: 1.3;
+    }
+
+    .scenario-mood {
+      font-size: 0.84rem;
+      color: var(--accent-gold);
+      margin-top: 3px;
+      font-weight: 500;
+    }
+
+    /* Badges */
+    .badge {
+      display: inline-flex;
+      align-items: center;
+      gap: 5px;
+      padding: 4px 10px;
+      border-radius: 999px;
+      font-size: 0.75rem;
+      font-weight: 700;
+      letter-spacing: 0.02em;
+      white-space: nowrap;
+      flex-shrink: 0;
+    }
+
+    .badge-atmos {
+      background-color: var(--accent-apple-bg);
+      color: #ff6b7b;
+      border: 1px solid var(--border-atmos);
+    }
+
+    .badge-stereo {
+      background-color: var(--accent-stereo-bg);
+      color: #34d399;
+      border: 1px solid rgba(16, 185, 129, 0.35);
+    }
+
+    .badge-analog {
+      background-color: var(--accent-analog-bg);
+      color: #fbbf24;
+      border: 1px solid rgba(245, 158, 11, 0.35);
+    }
+
+    .badge-room1 {
+      background-color: var(--accent-atmos-bg);
+      color: #7dd3fc;
+      border: 1px solid rgba(56, 189, 248, 0.3);
+    }
+
+    .badge-room2 {
+      background-color: var(--accent-gold-bg);
+      color: var(--accent-gold-light);
+      border: 1px solid var(--border-gold);
+    }
+
+    /* Info Blocks inside Card */
+    .info-row {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: 10px;
+      background-color: var(--bg-secondary);
+      padding: 12px;
+      border-radius: var(--radius-md);
+      border: 1px solid var(--border-subtle);
+      font-size: 0.83rem;
+    }
+
+    @media (max-width: 480px) {
+      .info-row {
+        grid-template-columns: 1fr;
+      }
+    }
+
+    .info-cell-label {
+      color: var(--text-muted);
+      font-size: 0.72rem;
+      text-transform: uppercase;
+      letter-spacing: 0.05em;
+      font-weight: 700;
+      margin-bottom: 2px;
+    }
+
+    .info-cell-val {
+      color: var(--text-primary);
+      font-weight: 500;
+    }
+
+    .chain-box {
+      background-color: rgba(212, 163, 115, 0.06);
+      border: 1px solid rgba(212, 163, 115, 0.2);
+      border-radius: var(--radius-md);
+      padding: 11px 14px;
+      font-size: 0.85rem;
+    }
+
+    .chain-box-title {
+      font-size: 0.72rem;
+      text-transform: uppercase;
+      letter-spacing: 0.05em;
+      color: var(--accent-gold);
+      font-weight: 700;
+      margin-bottom: 4px;
+    }
+
+    /* Podium (Treppchen) */
+    .podium-box {
+      background-color: var(--bg-secondary);
+      border-radius: var(--radius-md);
+      padding: 12px;
+      border: 1px solid var(--border-subtle);
+    }
+
+    .podium-title {
+      font-size: 0.72rem;
+      text-transform: uppercase;
+      letter-spacing: 0.05em;
+      color: var(--text-secondary);
+      font-weight: 700;
+      margin-bottom: 8px;
+    }
+
+    .podium-list {
+      display: flex;
+      flex-direction: column;
+      gap: 6px;
+    }
+
+    .podium-item {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      padding: 7px 10px;
+      border-radius: var(--radius-sm);
+      background-color: var(--bg-card);
+      font-size: 0.88rem;
+      border: 1px solid transparent;
+    }
+
+    .podium-item.rank-1 {
+      background: linear-gradient(90deg, rgba(251, 191, 36, 0.14) 0%, rgba(27, 31, 39, 0.9) 100%);
+      border-color: rgba(251, 191, 36, 0.35);
+      font-weight: 700;
+    }
+
+    .podium-item.highlight-match {
+      outline: 2px solid var(--accent-apple);
+    }
+
+    .podium-left {
+      display: flex;
+      align-items: center;
+      gap: 8px;
+    }
+
+    .podium-role {
+      font-size: 0.76rem;
+      color: var(--text-secondary);
+      font-weight: 400;
+    }
+
+    .acoustic-reason {
+      font-size: 0.87rem;
+      color: var(--text-secondary);
+      line-height: 1.5;
+    }
+
+    .acoustic-reason strong {
+      color: var(--text-primary);
+    }
+
+    .albums-footer {
+      margin-top: auto;
+      padding-top: 12px;
+      border-top: 1px solid var(--border-subtle);
+      font-size: 0.82rem;
+      color: var(--text-secondary);
+    }
+
+    .albums-footer span {
+      color: var(--accent-gold-light);
+      font-weight: 600;
+    }
+
+    /* Classic Table View */
+    .matrix-table-wrapper {
+      overflow-x: auto;
+      background-color: var(--bg-secondary);
+      border-radius: var(--radius-xl);
+      border: 1px solid var(--border-subtle);
+      box-shadow: var(--shadow-soft);
+    }
+
+    .matrix-table {
+      width: 100%;
+      border-collapse: collapse;
+      min-width: 980px;
+      font-size: 0.87rem;
+    }
+
+    .matrix-table th {
+      background-color: var(--bg-elevated);
+      color: var(--accent-gold-light);
+      text-align: left;
+      padding: 14px 16px;
+      font-size: 0.78rem;
+      text-transform: uppercase;
+      letter-spacing: 0.05em;
+      border-bottom: 1px solid var(--border-gold);
+    }
+
+    .matrix-table td {
+      padding: 16px;
+      border-bottom: 1px solid var(--border-subtle);
+      vertical-align: top;
+    }
+
+    .matrix-table tr:hover td {
+      background-color: rgba(255, 255, 255, 0.02);
+    }
+
+    /* Tab 2: Album Library Cards */
+    .album-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fill, minmax(340px, 1fr));
+      gap: 16px;
+    }
+
+    .album-card {
+      background-color: var(--bg-card);
+      border: 1px solid var(--border-subtle);
+      border-radius: var(--radius-lg);
+      padding: 18px;
+      display: flex;
+      flex-direction: column;
+      gap: 12px;
+      transition: border-color 0.2s;
+    }
+
+    .album-card:hover {
+      border-color: var(--border-gold);
+    }
+
+    .album-artist {
+      font-size: 0.8rem;
+      text-transform: uppercase;
+      letter-spacing: 0.06em;
+      color: var(--accent-gold);
+      font-weight: 700;
+    }
+
+    .album-name {
+      font-size: 1.1rem;
+      font-weight: 700;
+      color: var(--text-primary);
+    }
+
+    .album-tracks {
+      font-size: 0.86rem;
+      color: #f9a8d4;
+      background-color: rgba(250, 36, 60, 0.1);
+      padding: 6px 10px;
+      border-radius: var(--radius-sm);
+      border-left: 3px solid var(--accent-apple);
+    }
+
+    /* Tab 3: Hardware & Cheatsheet */
+    .hardware-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
+      gap: 20px;
+      margin-bottom: 24px;
+    }
+
+    .hw-box {
+      background-color: var(--bg-card);
+      border: 1px solid var(--border-subtle);
+      border-radius: var(--radius-xl);
+      padding: 22px;
+    }
+
+    .hw-box h3 {
+      font-size: 1.15rem;
+      margin-bottom: 12px;
+      color: var(--accent-gold-light);
+      display: flex;
+      align-items: center;
+      gap: 8px;
+    }
+
+    .signal-flow {
+      font-family: var(--font-mono);
+      font-size: 0.82rem;
+      background-color: var(--bg-primary);
+      padding: 14px;
+      border-radius: var(--radius-md);
+      border: 1px solid var(--border-subtle);
+      color: #e5e7eb;
+      overflow-x: auto;
+      line-height: 1.65;
+      margin: 12px 0;
+    }
+
+    .code-Copy-box {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      gap: 12px;
+      background-color: var(--bg-primary);
+      border: 1px solid var(--border-gold);
+      padding: 10px 14px;
+      border-radius: var(--radius-md);
+      margin: 10px 0;
+      font-family: var(--font-mono);
+      font-size: 0.95rem;
+      color: var(--accent-gold-light);
+    }
+
+    /* Modal */
+    .modal-backdrop {
+      position: fixed;
+      inset: 0;
+      background-color: rgba(0, 0, 0, 0.78);
+      backdrop-filter: blur(6px);
+      display: none;
+      align-items: center;
+      justify-content: center;
+      padding: 20px;
+      z-index: 1000;
+    }
+
+    .modal-backdrop.open {
+      display: flex;
+    }
+
+    .modal-content {
+      background-color: var(--bg-card);
+      border: 1px solid var(--border-gold);
+      border-radius: var(--radius-xl);
+      max-width: 680px;
+      width: 100%;
+      max-height: 90vh;
+      overflow-y: auto;
+      padding: 26px;
+      box-shadow: 0 25px 50px -12px rgba(0, 0, 0, 0.85);
+    }
+
+    .modal-header {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      margin-bottom: 18px;
+      padding-bottom: 12px;
+      border-bottom: 1px solid var(--border-subtle);
+    }
+
+    .step-list {
+      display: flex;
+      flex-direction: column;
+      gap: 14px;
+    }
+
+    .step-item {
+      background-color: var(--bg-secondary);
+      padding: 14px;
+      border-radius: var(--radius-md);
+      border: 1px solid var(--border-subtle);
+    }
+
+    .step-item h4 {
+      color: var(--accent-gold-light);
+      margin-bottom: 4px;
+      font-size: 0.95rem;
+    }
+
+    .step-item p {
+      font-size: 0.86rem;
+      color: var(--text-secondary);
+    }
+
+    /* Toast Notification */
+    .toast-container {
+      position: fixed;
+      bottom: 24px;
+      right: 24px;
+      z-index: 2000;
+      display: flex;
+      flex-direction: column;
+      gap: 10px;
+      pointer-events: none;
+    }
+
+    .toast {
+      background-color: var(--bg-elevated);
+      color: var(--text-primary);
+      border: 1px solid var(--accent-gold);
+      padding: 12px 18px;
+      border-radius: var(--radius-md);
+      box-shadow: 0 10px 25px rgba(0, 0, 0, 0.6);
+      font-size: 0.88rem;
+      font-weight: 600;
+      display: flex;
+      align-items: center;
+      gap: 10px;
+      animation: slideUp 0.25s ease forwards;
+    }
+
+    @keyframes slideUp {
+      from { opacity: 0; transform: translateY(12px); }
+      to { opacity: 1; transform: translateY(0); }
+    }
+
+    .empty-state {
+      text-align: center;
+      padding: 48px 20px;
+      background-color: var(--bg-secondary);
+      border-radius: var(--radius-xl);
+      border: 1px dashed var(--border-subtle);
+      color: var(--text-secondary);
+    }
+
+    .eq-bars {
+      display: grid;
+      grid-template-columns: repeat(3, 1fr);
+      gap: 10px;
+      margin: 12px 0;
+      text-align: center;
+    }
+
+    .eq-band {
+      background-color: var(--bg-secondary);
+      padding: 10px;
+      border-radius: var(--radius-md);
+      border: 1px solid var(--border-subtle);
+    }
+
+    .eq-val {
+      font-size: 1.15rem;
+      font-weight: 700;
+      color: var(--accent-gold-light);
+      margin: 4px 0;
+    }
+  </style>
+</head>
+<body>
+
+  <div class="app-container">
+    <!-- HEADER -->
+    <header class="app-header">
+      <div class="header-top">
+        <div class="brand-group">
+          <div class="brand-icon" aria-hidden="true">🎧</div>
+          <div class="brand-title">
+            <h1>
+              HiFi &amp; Apple Music Cockpit
+              <span class="badge badge-atmos">Dolby Atmos &amp; Hi-Res</span>
+            </h1>
+            <p class="brand-subtitle">Interaktive Entscheidungs-Matrix für Raum 1 (Digital/Streaming) &amp; Raum 2 (CD/Vinyl am Yamaha 525)</p>
+          </div>
+        </div>
+        <div class="header-actions">
+          <button type="button" class="btn btn-secondary" onclick="openHelpModal()">
+            <span>📱</span> iPad / iPhone Anleitung &amp; Kurzbefehl
+          </button>
+          <button type="button" class="btn btn-primary" onclick="downloadStandaloneApp()">
+            <span>📲</span> Als Offline-App (.html) speichern
+          </button>
+        </div>
+      </div>
+    </header>
+
+    <!-- NAVIGATION TABS -->
+    <nav class="nav-tabs" aria-label="Hauptnavigation">
+      <button type="button" class="nav-tab active" data-tab="tab-matrix" onclick="switchTab('tab-matrix')">
+        <span>🎛️</span> 1. Entscheidungs-Matrix (Filter)
+      </button>
+      <button type="button" class="nav-tab" data-tab="tab-library" onclick="switchTab('tab-library')">
+        <span>🥁</span> 2. Kessel-Punch &amp; Alben-Bibliothek
+      </button>
+      <button type="button" class="nav-tab" data-tab="tab-hardware" onclick="switchTab('tab-hardware')">
+        <span>🔌</span> 3. Räume, Hardware &amp; iPadOS-Spickzettel
+      </button>
+    </nav>
+
+    <!-- ========================================================================
+         TAB 1: ENTSCHEIDUNGS-MATRIX
+         ======================================================================== -->
+    <section id="tab-matrix" class="tab-panel active">
+      <div class="filter-cockpit">
+        <!-- Schnellwahl-Pills -->
+        <div class="quick-presets">
+          <span class="preset-label">⚡ Schnellwahl:</span>
+          <button type="button" class="preset-pill" onclick="applyQuickPreset('loudness')">🔥 90er/2000er Loudness-Retter (Oasis)</button>
+          <button type="button" class="preset-pill" onclick="applyQuickPreset('kessel')">🥁 Maximaler Kessel-Punch (MDR-M1)</button>
+          <button type="button" class="preset-pill" onclick="applyQuickPreset('sofa')">🛋️ Kuschelsofa &amp; Entspannung (HD 599)</button>
+          <button type="button" class="preset-pill" onclick="applyQuickPreset('planar')">🔬 70er Stereo-Referenz (HE400se)</button>
+          <button type="button" class="preset-pill" onclick="applyQuickPreset('analog')">💿 Raum 2: CD &amp; Vinyl (Yamaha 525)</button>
+        </div>
+
+        <!-- Kombinierbare Filter -->
+        <div class="filter-grid">
+          <div class="filter-group">
+            <label class="filter-label" for="search-matrix">🔍 Volltext-Suche</label>
+            <input type="text" id="search-matrix" class="filter-input" placeholder="z. B. Oasis, Rumours, Kessel, Atmos, Vinyl..." oninput="renderMatrix()">
+          </div>
+
+          <div class="filter-group">
+            <label class="filter-label" for="filter-room">🏠 Raum &amp; Setup</label>
+            <select id="filter-room" class="filter-select" onchange="renderMatrix()">
+              <option value="all">Alle Räume &amp; Setups</option>
+              <option value="room1-desk">Raum 1: Digital / Desk (Topping D10s → Head Box S2)</option>
+              <option value="room1-couch">Raum 1: Digital / Couch (iPad → JCALLY JM6 Pro)</option>
+              <option value="room2-analog">Raum 2: Analog (CD &amp; Vinyl am Yamaha 525)</option>
+              <option value="mobile-airpods">Raum-unabhängig (AirPods Max 2 / Pro 3)</option>
+            </select>
+          </div>
+
+          <div class="filter-group">
+            <label class="filter-label" for="filter-format">🎵 Audio-Format (Apple Music / Physisch)</label>
+            <select id="filter-format" class="filter-select" onchange="renderMatrix()">
+              <option value="all">Alle Formate</option>
+              <option value="atmos">Dolby Atmos („Immer ein“ / -18 LUFS)</option>
+              <option value="stereo">Stereo Lossless / Hi-Res (Atmos „Aus“)</option>
+              <option value="cd">Physische CD (16-Bit / 44,1 kHz Pure Direct)</option>
+              <option value="vinyl">Physisches Vinyl (Phono RIAA)</option>
+            </select>
+          </div>
+
+          <div class="filter-group">
+            <label class="filter-label" for="filter-headphone">🎧 Kopfhörer-Fokus</label>
+            <select id="filter-headphone" class="filter-select" onchange="renderMatrix()">
+              <option value="all">Alle Kopfhörer</option>
+              <option value="Sony MDR-M1">Sony MDR-M1 (Geschlossen / Kessel-Monitor)</option>
+              <option value="Sennheiser HD 599">Sennheiser HD 599 (Offen / Kuschelsofa)</option>
+              <option value="HiFiMAN HE400se">HiFiMAN HE400se (Planar / Stationär)</option>
+              <option value="Sony MDR-7506">Sony MDR-7506 (Studio-Lupe / CD)</option>
+              <option value="Philips Fidelio X2HR">Philips Fidelio X2HR (Kinosessel / V-Shape)</option>
+              <option value="Philips SHP9500">Philips SHP9500 (Offen / Neutral)</option>
+              <option value="AirPods Max 2">Apple AirPods Max 2 (H2 / Atmos / USB-C)</option>
+              <option value="AirPods Pro 3">Apple AirPods Pro 3 (Mobil / ANC)</option>
+            </select>
+          </div>
+
+          <div class="filter-group">
+            <label class="filter-label" for="filter-mood">🧠 Mentale Haltung / Modus</label>
+            <select id="filter-mood" class="filter-select" onchange="renderMatrix()">
+              <option value="all">Alle Stimmungen</option>
+              <option value="punch">Rhythmus-Punch &amp; Dynamik</option>
+              <option value="analytic">Analytisch &amp; Fokus</option>
+              <option value="immersive">Immersiv &amp; 3D-Bühne</option>
+              <option value="relax">Kuschelsofa &amp; Entspannung</option>
+            </select>
+          </div>
+        </div>
+
+        <!-- Untere Steuerleiste -->
+        <div class="filter-bar-bottom">
+          <div class="toggle-group">
+            <div class="segmented-control" role="group" aria-label="Kopfhörer-Treppchen-Modus">
+              <button type="button" id="btn-podium-all" class="segment-btn active" onclick="setPodiumMode('all')">
+                🥇🥈🥉 Ganzes Treppchen
+              </button>
+              <button type="button" id="btn-podium-gold" class="segment-btn" onclick="setPodiumMode('gold')">
+                🥇 Nur Platz 1 zeigen
+              </button>
+            </div>
+
+            <div class="segmented-control" role="group" aria-label="Ansicht umschalten">
+              <button type="button" id="btn-view-cards" class="segment-btn active" onclick="setViewMode('cards')">
+                🗂️ Karten-Ansicht (iPad)
+              </button>
+              <button type="button" id="btn-view-table" class="segment-btn" onclick="setViewMode('table')">
+                📊 Tabellen-Matrix
+              </button>
+            </div>
+          </div>
+
+          <div class="toggle-group">
+            <span id="matrix-counter" class="results-counter"><strong>8</strong> von 8 Szenarien aktiv</span>
+            <button type="button" class="btn btn-secondary btn-sm" onclick="resetMatrixFilters()">
+              ↺ Filter zurücksetzen
+            </button>
+          </div>
+        </div>
+      </div>
+
+      <!-- Dynamischer Output-Container für Tab 1 -->
+      <div id="matrix-output"><div class="scenarios-grid">
+        <article class="scenario-card">
+          <div class="card-header">
+            <div>
+              <h2 class="scenario-title">Opfer des Loudness War</h2>
+              <div class="scenario-mood">Dynamische Erholung &amp; freier Kessel-Punch</div>
+            </div>
+            <span class="badge badge-atmos">Dolby Atmos („Immer ein“)</span>
+          </div>
+
+          <div class="info-row">
+            <div>
+              <div class="info-cell-label">Epoche &amp; Dynamik</div>
+              <div class="info-cell-val">1992–2015 | Extrem komprimiertes Stereo (DR5–DR7)</div>
+            </div>
+            <div>
+              <div class="info-cell-label">Apple Music / Player Settings</div>
+              <div class="info-cell-val">Dolby Atmos: Immer ein | Sound Check: Aus | EQ: Aus</div>
+            </div>
+          </div>
+
+          <div class="chain-box">
+            <div class="chain-box-title">
+              <span class="badge badge-room1" style="margin-right: 6px; padding: 2px 8px;">Raum 1 (Digital / Streaming)</span>
+              Optimale Audiokette
+            </div>
+            <div style="color: var(--text-primary); font-weight: 600;">iPad/iPhone → JCALLY JM6 Pro (Couch) oder Topping D10s → Pro-Ject Head Box S2 (Desk)</div>
+          </div>
+
+          <div class="podium-box">
+            <div class="podium-title">Kopfhörer-Treppchen (1. bis 3. Wahl)</div>
+            <div class="podium-list">
+              
+          <div class="podium-item rank-1 ">
+            <div class="podium-left">
+              <span>🥇</span>
+              <span>Sony MDR-M1</span>
+            </div>
+            <span class="podium-role">Nahfeld-Kessel-Kick</span>
+          </div>
+        
+          <div class="podium-item  ">
+            <div class="podium-left">
+              <span>🥈</span>
+              <span>Sennheiser HD 599</span>
+            </div>
+            <span class="podium-role">Entspannte 3D-Weite</span>
+          </div>
+        
+          <div class="podium-item  ">
+            <div class="podium-left">
+              <span>🥉</span>
+              <span>Philips Fidelio X2HR</span>
+            </div>
+            <span class="podium-role">Große Kino-Bühne</span>
+          </div>
+        
+            </div>
+          </div>
+
+          <p class="acoustic-reason">Die strikte <strong>-18-LUFS-Normierung</strong> von Dolby Atmos verbietet Brickwall-Limiter und dekomprimiert die Rhythmusgruppe (auf ~DR12). Gitarrenwände wandern im 3D-Raum nach außen, sodass Snare und Toms endlich frei atmen und mit echtem Kesselkörper einschlagen.</p>
+
+          <div class="albums-footer">
+            <span>🎵 Schlüssel-Alben:</span> Oasis (Definitely Maybe, Morning Glory – Live Forever, Wonderwall), Nirvana (Nevermind – In Bloom), Green Day (American Idiot), Rush (Vapor Trails), Metallica (Black Album – Sad But True)
+          </div>
+        </article>
+      
+        <article class="scenario-card">
+          <div class="card-header">
+            <div>
+              <h2 class="scenario-title">Audiophile Stereo-Referenzen</h2>
+              <div class="scenario-mood">Kritisches Eintauchen &amp; maximale Planar-Tiefe</div>
+            </div>
+            <span class="badge badge-stereo">Stereo (Hi-Res / Lossless)</span>
+          </div>
+
+          <div class="info-row">
+            <div>
+              <div class="info-cell-label">Epoche &amp; Dynamik</div>
+              <div class="info-cell-val">1965–1979 | Analoge Masterbänder mit hoher Eigendynamik (DR12+)</div>
+            </div>
+            <div>
+              <div class="info-cell-label">Apple Music / Player Settings</div>
+              <div class="info-cell-val">Dolby Atmos: Aus | Sound Check: Aus | EQ: Aus | iPad-Pegel: 100%</div>
+            </div>
+          </div>
+
+          <div class="chain-box">
+            <div class="chain-box-title">
+              <span class="badge badge-room1" style="margin-right: 6px; padding: 2px 8px;">Raum 1 (Stationär am Desk)</span>
+              Optimale Audiokette
+            </div>
+            <div style="color: var(--text-primary); font-weight: 600;">iPad Air M3 → Topping D10s (2,0 Vrms) → Pro-Ject Head Box S2 (725 mW @ 32 Ω)</div>
+          </div>
+
+          <div class="podium-box">
+            <div class="podium-title">Kopfhörer-Treppchen (1. bis 3. Wahl)</div>
+            <div class="podium-list">
+              
+          <div class="podium-item rank-1 ">
+            <div class="podium-left">
+              <span>🥇</span>
+              <span>HiFiMAN HE400se</span>
+            </div>
+            <span class="podium-role">Planar-Referenz &amp; Transienten</span>
+          </div>
+        
+          <div class="podium-item  ">
+            <div class="podium-left">
+              <span>🥈</span>
+              <span>Sony MDR-M1</span>
+            </div>
+            <span class="podium-role">Trockener Kessel-Fokus</span>
+          </div>
+        
+          <div class="podium-item  ">
+            <div class="podium-left">
+              <span>🥉</span>
+              <span>Philips SHP9500</span>
+            </div>
+            <span class="podium-role">Offene Mitten-Neutralität</span>
+          </div>
+        
+            </div>
+          </div>
+
+          <p class="acoustic-reason">Reiner, unverfälschter <strong>2-Kanal-Mix ohne binaurale HRTF-Phasenfilterung</strong>. Die magnetostatischen Folien des HE400se nutzen die hohe Stromlieferfähigkeit (725 mW) und die Ausgangsimpedanz von &lt; 1 Ω der Head Box S2 für blitzschnelle Impulse voll aus.</p>
+
+          <div class="albums-footer">
+            <span>🎵 Schlüssel-Alben:</span> The Who (Who's Next – Baba O'Riley Steven Wilson Mix), Steely Dan (Aja, Gaucho – Hey Nineteen), Led Zeppelin (IV – When the Levee Breaks), Supertramp (Crime of the Century – School), Dire Straits (Dire Straits)
+          </div>
+        </article>
+      
+        <article class="scenario-card">
+          <div class="card-header">
+            <div>
+              <h2 class="scenario-title">Spatial-Audio-Highlights</h2>
+              <div class="scenario-mood">Immersiver 3D-Klangraum &amp; Konzertsaal-Loge</div>
+            </div>
+            <span class="badge badge-atmos">Dolby Atmos („Immer ein“)</span>
+          </div>
+
+          <div class="info-row">
+            <div>
+              <div class="info-cell-label">Epoche &amp; Dynamik</div>
+              <div class="info-cell-val">Ab 2016 | Sorgfältige Mehrkanal-Mixe von den Original-Mehrspurbändern</div>
+            </div>
+            <div>
+              <div class="info-cell-label">Apple Music / Player Settings</div>
+              <div class="info-cell-val">Dolby Atmos: Immer ein | Sound Check: Aus | EQ: Aus</div>
+            </div>
+          </div>
+
+          <div class="chain-box">
+            <div class="chain-box-title">
+              <span class="badge badge-room1" style="margin-right: 6px; padding: 2px 8px;">Raum 1 (Couch &amp; Desk)</span>
+              Optimale Audiokette
+            </div>
+            <div style="color: var(--text-primary); font-weight: 600;">iPad Air M3 → JCALLY JM6 Pro (Couch) oder Topping D10s → Head Box S2 (Desk)</div>
+          </div>
+
+          <div class="podium-box">
+            <div class="podium-title">Kopfhörer-Treppchen (1. bis 3. Wahl)</div>
+            <div class="podium-list">
+              
+          <div class="podium-item rank-1 ">
+            <div class="podium-left">
+              <span>🥇</span>
+              <span>Sennheiser HD 599</span>
+            </div>
+            <span class="podium-role">Offene Konzertsaal-Loge</span>
+          </div>
+        
+          <div class="podium-item  ">
+            <div class="podium-left">
+              <span>🥈</span>
+              <span>Sony MDR-M1</span>
+            </div>
+            <span class="podium-role">Griffige Kessel-Kontur</span>
+          </div>
+        
+          <div class="podium-item  ">
+            <div class="podium-left">
+              <span>🥉</span>
+              <span>AirPods Max 2</span>
+            </div>
+            <span class="podium-role">3D-Audio / Head-Tracking</span>
+          </div>
+        
+            </div>
+          </div>
+
+          <p class="acoustic-reason">Die offene Bauweise des <strong>HD 599</strong> fächert das binaurale 3D-Klangfeld natürlich nach außen auf. Tief gestimmte Stand-Toms stehen frei im Raum, während der samtige Grundton etwaige Schärfen (z. B. die Uhren bei Pink Floyds <em>Time</em>) komplett abfedert.</p>
+
+          <div class="albums-footer">
+            <span>🎵 Schlüssel-Alben:</span> Fleetwood Mac (Rumours – The Chain, Dreams), R.E.M. (Automatic for the People – Drive), The Beatles (Abbey Road – Come Together Giles Martin Mix), Pink Floyd (Dark Side of the Moon 50th – Time), Elton John (Goodbye Yellow Brick Road), Tom Petty (Wildflowers)
+          </div>
+        </article>
+      
+        <article class="scenario-card">
+          <div class="card-header">
+            <div>
+              <h2 class="scenario-title">Schrille &amp; spitze Masterings</h2>
+              <div class="scenario-mood">Regenerativer Feierabend ohne Hörermüdung</div>
+            </div>
+            <span class="badge badge-stereo">Stereo (Lossless)</span>
+          </div>
+
+          <div class="info-row">
+            <div>
+              <div class="info-cell-label">Epoche &amp; Dynamik</div>
+              <div class="info-cell-val">1980–1991 | Frühe Digitaltechnik, Gated-Reverb-Snare &amp; schneidende Höhen</div>
+            </div>
+            <div>
+              <div class="info-cell-label">Apple Music / Player Settings</div>
+              <div class="info-cell-val">Dolby Atmos: Aus | Sound Check: Aus | EQ: Aus</div>
+            </div>
+          </div>
+
+          <div class="chain-box">
+            <div class="chain-box-title">
+              <span class="badge badge-room1" style="margin-right: 6px; padding: 2px 8px;">Raum 1 (Couch / Bett)</span>
+              Optimale Audiokette
+            </div>
+            <div style="color: var(--text-primary); font-weight: 600;">iPad / iPhone → JCALLY JM6 Pro (&lt; 1 Ω, 1,6 Vrms)</div>
+          </div>
+
+          <div class="podium-box">
+            <div class="podium-title">Kopfhörer-Treppchen (1. bis 3. Wahl)</div>
+            <div class="podium-list">
+              
+          <div class="podium-item rank-1 ">
+            <div class="podium-left">
+              <span>🥇</span>
+              <span>Sennheiser HD 599</span>
+            </div>
+            <span class="podium-role">250g Kuschelsofa-Champion</span>
+          </div>
+        
+          <div class="podium-item  ">
+            <div class="podium-left">
+              <span>🥈</span>
+              <span>Philips Fidelio X2HR</span>
+            </div>
+            <span class="podium-role">Warmes Bass-Fundament</span>
+          </div>
+        
+          <div class="podium-item  ">
+            <div class="podium-left">
+              <span>🥉</span>
+              <span>AirPods Max 2</span>
+            </div>
+            <span class="podium-role">Sanfter Superhochton</span>
+          </div>
+        
+            </div>
+          </div>
+
+          <p class="acoustic-reason">Der sanfte Hochton-Roll-off, die warmen Mitten und das federleichte <strong>250-Gramm-Design</strong> des braunen HD 599 nehmen peitschenden 80er-Snares, schrillen Synthesizern und spitzen E-Gitarren jede Aggressivität.</p>
+
+          <div class="albums-footer">
+            <span>🎵 Schlüssel-Alben:</span> Bruce Springsteen (Born in the U.S.A., Badlands, The River), frühe 80er Stadium-Rock-Produktionen &amp; dünne CD-Transfers
+          </div>
+        </article>
+      
+        <article class="scenario-card">
+          <div class="card-header">
+            <div>
+              <h2 class="scenario-title">Kritisches Transienten- &amp; Kessel-Tuning</h2>
+              <div class="scenario-mood">Analytischer Studio-Nahfeld- &amp; A/B-Hörvergleich</div>
+            </div>
+            <span class="badge badge-stereo">Stereo (Hi-Res Lossless)</span>
+          </div>
+
+          <div class="info-row">
+            <div>
+              <div class="info-cell-label">Epoche &amp; Dynamik</div>
+              <div class="info-cell-val">Universell | Fokus auf trockene Studio-Drums &amp; Stand-Toms (80–250 Hz)</div>
+            </div>
+            <div>
+              <div class="info-cell-label">Apple Music / Player Settings</div>
+              <div class="info-cell-val">Dolby Atmos: Aus | Sound Check: Aus | Paralleler Output aktiv</div>
+            </div>
+          </div>
+
+          <div class="chain-box">
+            <div class="chain-box-title">
+              <span class="badge badge-room1" style="margin-right: 6px; padding: 2px 8px;">Raum 1 (Desk A/B-Station)</span>
+              Optimale Audiokette
+            </div>
+            <div style="color: var(--text-primary); font-weight: 600;">iPad Air M3 → Topping D10s → Pro-Ject Head Box S2 (6,35-mm &amp; 3,5-mm Buchsen parallel)</div>
+          </div>
+
+          <div class="podium-box">
+            <div class="podium-title">Kopfhörer-Treppchen (1. bis 3. Wahl)</div>
+            <div class="podium-list">
+              
+          <div class="podium-item rank-1 ">
+            <div class="podium-left">
+              <span>🥇</span>
+              <span>Sony MDR-M1</span>
+            </div>
+            <span class="podium-role">Voller Kessel-Körper &amp; Impact</span>
+          </div>
+        
+          <div class="podium-item  ">
+            <div class="podium-left">
+              <span>🥈</span>
+              <span>Sony MDR-7506</span>
+            </div>
+            <span class="podium-role">100-Hz-Oberbass-Klick &amp; Lupe</span>
+          </div>
+        
+          <div class="podium-item  ">
+            <div class="podium-left">
+              <span>🥉</span>
+              <span>HiFiMAN HE400se</span>
+            </div>
+            <span class="podium-role">Schnellstes Ausschwingen</span>
+          </div>
+        
+            </div>
+          </div>
+
+          <p class="acoustic-reason">Die beiden parallelen Ausgänge der Head Box S2 erlauben den sofortigen Vergleich: Der <strong>MDR-M1</strong> zeigt das volle Holzvolumen der Stand-Toms und reicht bis in den Tiefbass, während der <strong>MDR-7506</strong> den Anschlag bei 100 Hz wie unter einem Mikroskop isoliert.</p>
+
+          <div class="albums-footer">
+            <span>🎵 Schlüssel-Alben:</span> Fleetwood Mac (Tusk), Peter Gabriel (Melt – Biko, Intruder), Paul Simon (The Obvious Child), Tool (Fear Inoculum – Pneuma), Muddy Waters (Folk Singer – Good Morning Little School Girl)
+          </div>
+        </article>
+      
+        <article class="scenario-card">
+          <div class="card-header">
+            <div>
+              <h2 class="scenario-title">Physische CD-Erstausgaben</h2>
+              <div class="scenario-mood">Bitperfekter Silberling-Genuss ohne Loudness War</div>
+            </div>
+            <span class="badge badge-analog">CD-Audio (16-Bit / 44,1 kHz)</span>
+          </div>
+
+          <div class="info-row">
+            <div>
+              <div class="info-cell-label">Epoche &amp; Dynamik</div>
+              <div class="info-cell-val">1982–1995 | Unkomprimierte Original-CDs (DR14–DR16)</div>
+            </div>
+            <div>
+              <div class="info-cell-label">Apple Music / Player Settings</div>
+              <div class="info-cell-val">Pure Direct am Yamaha CD-S300 aktiv (Umgeht Apple Cloud-Matching)</div>
+            </div>
+          </div>
+
+          <div class="chain-box">
+            <div class="chain-box-title">
+              <span class="badge badge-room2" style="margin-right: 6px; padding: 2px 8px;">Raum 2 (Physisches Musikzimmer)</span>
+              Optimale Audiokette
+            </div>
+            <div style="color: var(--text-primary); font-weight: 600;">Yamaha CD-S300 → Cinch → Yamaha 525 Vollverstärker (6,35-mm Kopfhörerausgang)</div>
+          </div>
+
+          <div class="podium-box">
+            <div class="podium-title">Kopfhörer-Treppchen (1. bis 3. Wahl)</div>
+            <div class="podium-list">
+              
+          <div class="podium-item rank-1 ">
+            <div class="podium-left">
+              <span>🥇</span>
+              <span>Sony MDR-7506</span>
+            </div>
+            <span class="podium-role">Gezähmte Studio-Präzision</span>
+          </div>
+        
+          <div class="podium-item  ">
+            <div class="podium-left">
+              <span>🥈</span>
+              <span>Sony MDR-M1</span>
+            </div>
+            <span class="podium-role">Kompakter Kick-Monitor</span>
+          </div>
+        
+          <div class="podium-item  ">
+            <div class="podium-left">
+              <span>🥉</span>
+              <span>Sennheiser HD 599</span>
+            </div>
+            <span class="podium-role">Warme Vollmundigkeit</span>
+          </div>
+        
+            </div>
+          </div>
+
+          <p class="acoustic-reason">Verhindert, dass Apple Music deine gerippten Original-CDs durch komprimierte Cloud-Remaster ersetzt. Die höhere Ausgangsimpedanz (&gt; 100 Ω) des <strong>Yamaha 525</strong> nimmt dem <strong>MDR-7506</strong> die analytische Schärfe und gibt ihm ein volleres Oberbass-Fundament.</p>
+
+          <div class="albums-footer">
+            <span>🎵 Schlüssel-Alben:</span> Dire Straits (Brothers in Arms – Original 1985 CD mit DR16), frühe unkomprimierte Erstauflagen der 80er und frühen 90er
+          </div>
+        </article>
+      
+        <article class="scenario-card">
+          <div class="card-header">
+            <div>
+              <h2 class="scenario-title">Physisches Vinyl</h2>
+              <div class="scenario-mood">Haptischer Ritual-Genuss &amp; analoger Kaminfeuer-Schmelz</div>
+            </div>
+            <span class="badge badge-analog">Phono-Analog (RIAA)</span>
+          </div>
+
+          <div class="info-row">
+            <div>
+              <div class="info-cell-label">Epoche &amp; Dynamik</div>
+              <div class="info-cell-val">Historisch &amp; Reissue | Analoge Schallplattenpressungen</div>
+            </div>
+            <div>
+              <div class="info-cell-label">Apple Music / Player Settings</div>
+              <div class="info-cell-val">Analoge RIAA-Entzerrung über Phono-Eingang des Yamaha 525</div>
+            </div>
+          </div>
+
+          <div class="chain-box">
+            <div class="chain-box-title">
+              <span class="badge badge-room2" style="margin-right: 6px; padding: 2px 8px;">Raum 2 (Physisches Musikzimmer)</span>
+              Optimale Audiokette
+            </div>
+            <div style="color: var(--text-primary); font-weight: 600;">Technics Quartz SL-QD33 (AT85EP-T4P) → Yamaha 525 (Phono In → Kopfhörerausgang)</div>
+          </div>
+
+          <div class="podium-box">
+            <div class="podium-title">Kopfhörer-Treppchen (1. bis 3. Wahl)</div>
+            <div class="podium-list">
+              
+          <div class="podium-item rank-1 ">
+            <div class="podium-left">
+              <span>🥇</span>
+              <span>Sennheiser HD 599</span>
+            </div>
+            <span class="podium-role">100-Hz-Impedanz-Boost („Kaminfeuer“)</span>
+          </div>
+        
+          <div class="podium-item  ">
+            <div class="podium-left">
+              <span>🥈</span>
+              <span>Sony MDR-M1</span>
+            </div>
+            <span class="podium-role">Trockener Rillen-Punch</span>
+          </div>
+        
+          <div class="podium-item  ">
+            <div class="podium-left">
+              <span>🥉</span>
+              <span>Philips Fidelio X2HR</span>
+            </div>
+            <span class="podium-role">Warmes Breitwand-Kino</span>
+          </div>
+        
+            </div>
+          </div>
+
+          <p class="acoustic-reason">Die Vorwiderstände des Yamaha 525 interagieren gezielt mit der <strong>100-Hz-Impedanzspitze (&gt; 200 Ω) des HD 599</strong>. Das erzeugt einen wunderbaren, warmen Grundton-Schub für Schallplatten. (Der HE400se bleibt wegen seines Stromhungers strikt in Raum 1).</p>
+
+          <div class="albums-footer">
+            <span>🎵 Schlüssel-Alben:</span> Red Hot Chili Peppers (Stadium Arcadium Vinyl-Master), 70er West-Coast-Pressungen (Fleetwood Mac, Eagles, Neil Young – Harvest)
+          </div>
+        </article>
+      
+        <article class="scenario-card">
+          <div class="card-header">
+            <div>
+              <h2 class="scenario-title">Film, Serien &amp; Mobile Mobilität</h2>
+              <div class="scenario-mood">Blockbuster-Kino, Reise-Komfort &amp; Computational Audio</div>
+            </div>
+            <span class="badge badge-atmos">Dolby Atmos / Spatial Audio</span>
+          </div>
+
+          <div class="info-row">
+            <div>
+              <div class="info-cell-label">Epoche &amp; Dynamik</div>
+              <div class="info-cell-val">Modernes Streaming | Apple TV+, Blockbuster &amp; Unterwegs</div>
+            </div>
+            <div>
+              <div class="info-cell-label">Apple Music / Player Settings</div>
+              <div class="info-cell-val">Kontrollzentrum: 3D-Audio Ein | iOS 27 EQ: Tiefen -1/-2, Mitten +1, Höhen 0</div>
+            </div>
+          </div>
+
+          <div class="chain-box">
+            <div class="chain-box-title">
+              <span class="badge badge-room1" style="margin-right: 6px; padding: 2px 8px;">Raum-unabhängig / Mobil</span>
+              Optimale Audiokette
+            </div>
+            <div style="color: var(--text-primary); font-weight: 600;">AirPods Max 2 (Bluetooth AAC oder USB-C-Kabel 24-Bit/48 kHz Lossless) &amp; AirPods Pro 3</div>
+          </div>
+
+          <div class="podium-box">
+            <div class="podium-title">Kopfhörer-Treppchen (1. bis 3. Wahl)</div>
+            <div class="podium-list">
+              
+          <div class="podium-item rank-1 ">
+            <div class="podium-left">
+              <span>🥇</span>
+              <span>AirPods Max 2</span>
+            </div>
+            <span class="podium-role">Referenz für Film &amp; Spatial Audio</span>
+          </div>
+        
+          <div class="podium-item  ">
+            <div class="podium-left">
+              <span>🥈</span>
+              <span>AirPods Pro 3</span>
+            </div>
+            <span class="podium-role">Ultraleichte Mobilität &amp; ANC</span>
+          </div>
+        
+          <div class="podium-item  ">
+            <div class="podium-left">
+              <span>🥉</span>
+              <span>Sony MDR-M1</span>
+            </div>
+            <span class="podium-role">Kabel-Backup am JM6 Pro (LTGEM Case)</span>
+          </div>
+        
+            </div>
+          </div>
+
+          <p class="acoustic-reason">Perfekte Verzahnung aus <strong>Apple H2-Chip</strong>, adaptiver Einmessung und ANC. Über das USB-C-Kabel decodiert der interne DAC der echten AirPods Max 2 nativen 24-Bit/48 kHz Lossless-Sound ohne doppelte Analog-Umwandlung.</p>
+
+          <div class="albums-footer">
+            <span>🎵 Schlüssel-Alben:</span> Hans Zimmer (The Dark Knight – Why So Serious? ab Min 03:26), O-Zone Percussion Group (Jazz Variants), Apple TV+ Serien &amp; Filme
+          </div>
+        </article>
+      </div></div>
+    </section>
+
+    <!-- ========================================================================
+         TAB 2: KESSEL-PUNCH & ALBEN-BIBLIOTHEK (APPLE MUSIC)
+         ======================================================================== -->
+    <section id="tab-library" class="tab-panel">
+      <div class="filter-cockpit">
+        <div class="filter-grid">
+          <div class="filter-group">
+            <label class="filter-label" for="search-albums">🔍 Alben, Songs oder Drummer suchen</label>
+            <input type="text" id="search-albums" class="filter-input" placeholder="z. B. Mick Fleetwood, Baba O'Riley, Biko, Keith Moon..." oninput="renderAlbums()">
+          </div>
+
+          <div class="filter-group">
+            <label class="filter-label" for="filter-album-cat">🥁 Klang-Kategorie</label>
+            <select id="filter-album-cat" class="filter-select" onchange="renderAlbums()">
+              <option value="all">Alle Referenz-Kategorien</option>
+              <option value="70s-kessel">70er Kessel-Punch &amp; Stand-Toms (80–250 Hz)</option>
+              <option value="atmos-retter">Dolby Atmos Retter &amp; 3D-Referenzen (-18 LUFS)</option>
+              <option value="studio-dry">Trockener Studio-Punch &amp; Transienten</option>
+              <option value="blues-roots">Blues, Holzfaser &amp; Erdig</option>
+              <option value="rumours-wide">Rumours-Vibe &amp; Amerikanische Weite</option>
+            </select>
+          </div>
+
+          <div class="filter-group">
+            <label class="filter-label" for="filter-album-format">🎚️ Empfohlener Apple Music Modus</label>
+            <select id="filter-album-format" class="filter-select" onchange="renderAlbums()">
+              <option value="all">Alle Modi (Atmos &amp; Stereo)</option>
+              <option value="Atmos">Dolby Atmos („Immer ein“)</option>
+              <option value="Stereo">Stereo Lossless / Hi-Res (Atmos „Aus“)</option>
+            </select>
+          </div>
+        </div>
+
+        <div class="filter-bar-bottom">
+          <span id="album-counter" class="results-counter"><strong>18</strong> von 18 Alben-Referenzen angezeigt</span>
+          <button type="button" class="btn btn-secondary btn-sm" onclick="resetAlbumFilters()">↺ Filter zurücksetzen</button>
+        </div>
+      </div>
+
+      <!-- Hinweis-Banner Red Hot Chili Peppers -->
+      <div class="chain-box" style="margin-bottom: 20px; border-color: var(--border-atmos); background-color: rgba(250, 36, 60, 0.07);">
+        <div class="chain-box-title" style="color: #ff6b7b;">⚠️ Wichtiger Katalog-Befund: Red Hot Chili Peppers auf Apple Music</div>
+        <p style="font-size: 0.86rem; color: var(--text-primary);">
+          Sowohl <strong>Californication (1999)</strong> als auch <strong>Unlimited Love (2022)</strong> liegen im deutschen Apple-Music-Katalog <strong>ausschließlich in komprimiertem Stereo</strong> vor (kein Dolby-Atmos-Master vorhanden). Das bekannte Dynamik-Wunder von <em>Californication</em> stammt vom inoffiziellen Studio-Leak („Unmastered“), für echten Chili-Peppers-Kessel-Punch bleibt nur das analoge Vinyl-Master von <em>Stadium Arcadium</em> in Raum 2.
+        </p>
+      </div>
+
+      <div id="albums-output" class="album-grid">
+          <article class="album-card">
+            <div style="display: flex; justify-content: space-between; align-items: flex-start; gap: 8px;">
+              <div>
+                <div class="album-artist">Fleetwood Mac</div>
+                <h3 class="album-name">Tusk (1979)</h3>
+              </div>
+              <span class="badge badge-stereo">Stereo Lossless (Atmos Aus)</span>
+            </div>
+
+            <div class="album-tracks">
+              <strong>Anspieltipp:</strong> Tusk <span style="color: var(--text-secondary);">| Drummer: Mick Fleetwood</span>
+            </div>
+
+            <p style="font-size: 0.86rem; color: var(--text-secondary); flex-grow: 1;">
+              Das absolute Paradebeispiel: Große, kaum gedämpfte Toms mit Raum-Mikrofonen aufgenommen. Archaischer, hölzerner Kessel-Rhythmus komplett ohne wummernden Subbass.
+            </p>
+
+            <div style="display: flex; justify-content: space-between; align-items: center; gap: 8px; padding-top: 10px; border-top: 1px solid var(--border-subtle); font-size: 0.8rem;">
+              <span style="color: var(--accent-gold-light); font-weight: 600;">🥇 Sony MDR-M1 / HD 599</span>
+              <button type="button" class="btn btn-secondary btn-sm" onclick="copyText('Fleetwood Mac Tusk', 'Suchbegriff für Apple Music kopiert!')">
+                📋 Für Apple Music kopieren
+              </button>
+            </div>
+          </article>
+        
+          <article class="album-card">
+            <div style="display: flex; justify-content: space-between; align-items: flex-start; gap: 8px;">
+              <div>
+                <div class="album-artist">Fleetwood Mac</div>
+                <h3 class="album-name">Rumours (1977)</h3>
+              </div>
+              <span class="badge badge-atmos">Dolby Atmos („Immer ein“) &amp; Hi-Res Stereo</span>
+            </div>
+
+            <div class="album-tracks">
+              <strong>Anspieltipp:</strong> The Chain, Dreams, Go Your Own Way <span style="color: var(--text-secondary);">| Drummer: Mick Fleetwood</span>
+            </div>
+
+            <p style="font-size: 0.86rem; color: var(--text-secondary); flex-grow: 1;">
+              Mick Fleetwoods tief gestimmte Stand-Toms und Flams vor dem Bass-Breakdown in 'The Chain' stehen im Atmos-Mix mit enormer physischer Fellmasse frei im Raum.
+            </p>
+
+            <div style="display: flex; justify-content: space-between; align-items: center; gap: 8px; padding-top: 10px; border-top: 1px solid var(--border-subtle); font-size: 0.8rem;">
+              <span style="color: var(--accent-gold-light); font-weight: 600;">🥇 Sennheiser HD 599 / Sony MDR-M1</span>
+              <button type="button" class="btn btn-secondary btn-sm" onclick="copyText('Fleetwood Mac The Chain', 'Suchbegriff für Apple Music kopiert!')">
+                📋 Für Apple Music kopieren
+              </button>
+            </div>
+          </article>
+        
+          <article class="album-card">
+            <div style="display: flex; justify-content: space-between; align-items: flex-start; gap: 8px;">
+              <div>
+                <div class="album-artist">The Who</div>
+                <h3 class="album-name">Who’s Next (1971 – Steven Wilson Remix)</h3>
+              </div>
+              <span class="badge badge-stereo">Stereo Hi-Res Lossless</span>
+            </div>
+
+            <div class="album-tracks">
+              <strong>Anspieltipp:</strong> Baba O'Riley <span style="color: var(--text-secondary);">| Drummer: Keith Moon</span>
+            </div>
+
+            <p style="font-size: 0.86rem; color: var(--text-secondary); flex-grow: 1;">
+              Deine 10/10-Referenz: Keith Moon wirbelt über eine gigantische Wand aus Toms ohne metallisches Hi-Hat-Zischen. Steven Wilson hat den Bereich um 100–150 Hz phänomenal freigelegt.
+            </p>
+
+            <div style="display: flex; justify-content: space-between; align-items: center; gap: 8px; padding-top: 10px; border-top: 1px solid var(--border-subtle); font-size: 0.8rem;">
+              <span style="color: var(--accent-gold-light); font-weight: 600;">🥇 HiFiMAN HE400se / Sony MDR-M1</span>
+              <button type="button" class="btn btn-secondary btn-sm" onclick="copyText('The Who Baba O\'Riley', 'Suchbegriff für Apple Music kopiert!')">
+                📋 Für Apple Music kopieren
+              </button>
+            </div>
+          </article>
+        
+          <article class="album-card">
+            <div style="display: flex; justify-content: space-between; align-items: flex-start; gap: 8px;">
+              <div>
+                <div class="album-artist">R.E.M.</div>
+                <h3 class="album-name">Automatic for the People (1992 / Atmos Mix)</h3>
+              </div>
+              <span class="badge badge-atmos">Dolby Atmos („Immer ein“)</span>
+            </div>
+
+            <div class="album-tracks">
+              <strong>Anspieltipp:</strong> Drive <span style="color: var(--text-secondary);">| Drummer: Bill Berry</span>
+            </div>
+
+            <p style="font-size: 0.86rem; color: var(--text-secondary); flex-grow: 1;">
+              Wenn Bill Berrys Drumset nach der akustischen Einleitung einsetzt, federt der natürliche Raum der tiefen Toms und der Bassdrum trocken und greifbar ins Ohr.
+            </p>
+
+            <div style="display: flex; justify-content: space-between; align-items: center; gap: 8px; padding-top: 10px; border-top: 1px solid var(--border-subtle); font-size: 0.8rem;">
+              <span style="color: var(--accent-gold-light); font-weight: 600;">🥇 Sennheiser HD 599 / Sony MDR-M1</span>
+              <button type="button" class="btn btn-secondary btn-sm" onclick="copyText('R.E.M. Drive', 'Suchbegriff für Apple Music kopiert!')">
+                📋 Für Apple Music kopieren
+              </button>
+            </div>
+          </article>
+        
+          <article class="album-card">
+            <div style="display: flex; justify-content: space-between; align-items: flex-start; gap: 8px;">
+              <div>
+                <div class="album-artist">The Beatles</div>
+                <h3 class="album-name">Abbey Road (2019 Giles Martin Mix)</h3>
+              </div>
+              <span class="badge badge-atmos">Dolby Atmos („Immer ein“)</span>
+            </div>
+
+            <div class="album-tracks">
+              <strong>Anspieltipp:</strong> Come Together, The End <span style="color: var(--text-secondary);">| Drummer: Ringo Starr</span>
+            </div>
+
+            <p style="font-size: 0.86rem; color: var(--text-secondary); flex-grow: 1;">
+              Ringo dämpfte seine Felle mit Geschirrtüchern ab. Der dunkle, holzige Tom-Lauf im Intro von 'Come Together' reißt unmittelbar nach dem Anschlag ab und hat in Atmos riesigen Headroom.
+            </p>
+
+            <div style="display: flex; justify-content: space-between; align-items: center; gap: 8px; padding-top: 10px; border-top: 1px solid var(--border-subtle); font-size: 0.8rem;">
+              <span style="color: var(--accent-gold-light); font-weight: 600;">🥇 Sony MDR-M1 / Sennheiser HD 599</span>
+              <button type="button" class="btn btn-secondary btn-sm" onclick="copyText('The Beatles Come Together', 'Suchbegriff für Apple Music kopiert!')">
+                📋 Für Apple Music kopieren
+              </button>
+            </div>
+          </article>
+        
+          <article class="album-card">
+            <div style="display: flex; justify-content: space-between; align-items: flex-start; gap: 8px;">
+              <div>
+                <div class="album-artist">Oasis</div>
+                <h3 class="album-name">Definitely Maybe &amp; (What's the Story) Morning Glory?</h3>
+              </div>
+              <span class="badge badge-atmos">Dolby Atmos („Immer ein“ Pflicht!)</span>
+            </div>
+
+            <div class="album-tracks">
+              <strong>Anspieltipp:</strong> Live Forever, Wonderwall, Supersonic <span style="color: var(--text-secondary);">| Drummer: Tony McCarroll / Alan White</span>
+            </div>
+
+            <p style="font-size: 0.86rem; color: var(--text-secondary); flex-grow: 1;">
+              Die Stereo-Remaster klemmen bei DR5 in der Owen-Morris-Gitarrenwand fest. In Dolby Atmos (-18 LUFS) zieht sich die Wand auseinander und das Schlagzeug klingt endlich nach echter Musik.
+            </p>
+
+            <div style="display: flex; justify-content: space-between; align-items: center; gap: 8px; padding-top: 10px; border-top: 1px solid var(--border-subtle); font-size: 0.8rem;">
+              <span style="color: var(--accent-gold-light); font-weight: 600;">🥇 Sony MDR-M1 / Sennheiser HD 599</span>
+              <button type="button" class="btn btn-secondary btn-sm" onclick="copyText('Oasis Live Forever', 'Suchbegriff für Apple Music kopiert!')">
+                📋 Für Apple Music kopieren
+              </button>
+            </div>
+          </article>
+        
+          <article class="album-card">
+            <div style="display: flex; justify-content: space-between; align-items: flex-start; gap: 8px;">
+              <div>
+                <div class="album-artist">Pink Floyd</div>
+                <h3 class="album-name">The Dark Side of the Moon (50th Anniversary)</h3>
+              </div>
+              <span class="badge badge-atmos">Dolby Atmos („Immer ein“)</span>
+            </div>
+
+            <div class="album-tracks">
+              <strong>Anspieltipp:</strong> Time <span style="color: var(--text-secondary);">| Drummer: Nick Mason</span>
+            </div>
+
+            <p style="font-size: 0.86rem; color: var(--text-secondary); flex-grow: 1;">
+              Entschärft die schrillen Uhren des Stereo-Remasters und lässt Nick Masons legendäres Solo auf den Rototoms und tiefen Kesseln plastisch durch den Raum wandern.
+            </p>
+
+            <div style="display: flex; justify-content: space-between; align-items: center; gap: 8px; padding-top: 10px; border-top: 1px solid var(--border-subtle); font-size: 0.8rem;">
+              <span style="color: var(--accent-gold-light); font-weight: 600;">🥇 Sennheiser HD 599 / HiFiMAN HE400se</span>
+              <button type="button" class="btn btn-secondary btn-sm" onclick="copyText('Pink Floyd Time', 'Suchbegriff für Apple Music kopiert!')">
+                📋 Für Apple Music kopieren
+              </button>
+            </div>
+          </article>
+        
+          <article class="album-card">
+            <div style="display: flex; justify-content: space-between; align-items: flex-start; gap: 8px;">
+              <div>
+                <div class="album-artist">Peter Gabriel</div>
+                <h3 class="album-name">Peter Gabriel 3: Melt (1980)</h3>
+              </div>
+              <span class="badge badge-stereo">Stereo Lossless</span>
+            </div>
+
+            <div class="album-tracks">
+              <strong>Anspieltipp:</strong> Biko, Intruder <span style="color: var(--text-secondary);">| Drummer: Phil Collins</span>
+            </div>
+
+            <p style="font-size: 0.86rem; color: var(--text-secondary); flex-grow: 1;">
+              Der direkte Bruder von 'Tusk': Im Studio waren keinerlei Becken erlaubt. 'Biko' lebt ausschließlich von einem monumentalen, tiefen Tom-Rhythmus mit enormer Kessel-Masse.
+            </p>
+
+            <div style="display: flex; justify-content: space-between; align-items: center; gap: 8px; padding-top: 10px; border-top: 1px solid var(--border-subtle); font-size: 0.8rem;">
+              <span style="color: var(--accent-gold-light); font-weight: 600;">🥇 Sony MDR-M1</span>
+              <button type="button" class="btn btn-secondary btn-sm" onclick="copyText('Peter Gabriel Biko', 'Suchbegriff für Apple Music kopiert!')">
+                📋 Für Apple Music kopieren
+              </button>
+            </div>
+          </article>
+        
+          <article class="album-card">
+            <div style="display: flex; justify-content: space-between; align-items: flex-start; gap: 8px;">
+              <div>
+                <div class="album-artist">Led Zeppelin</div>
+                <h3 class="album-name">Led Zeppelin IV (1971)</h3>
+              </div>
+              <span class="badge badge-stereo">Stereo Hi-Res Lossless</span>
+            </div>
+
+            <div class="album-tracks">
+              <strong>Anspieltipp:</strong> When the Levee Breaks <span style="color: var(--text-secondary);">| Drummer: John Bonham</span>
+            </div>
+
+            <p style="font-size: 0.86rem; color: var(--text-secondary); flex-grow: 1;">
+              Mit nur drei Mikrofonen im steinernen Treppenhaus von Headley Grange aufgenommen. Das pure Volumen von Bonhams massiven Holzkesseln drückt dich förmlich in den Sessel.
+            </p>
+
+            <div style="display: flex; justify-content: space-between; align-items: center; gap: 8px; padding-top: 10px; border-top: 1px solid var(--border-subtle); font-size: 0.8rem;">
+              <span style="color: var(--accent-gold-light); font-weight: 600;">🥇 HiFiMAN HE400se / Sony MDR-M1</span>
+              <button type="button" class="btn btn-secondary btn-sm" onclick="copyText('Led Zeppelin When the Levee Breaks', 'Suchbegriff für Apple Music kopiert!')">
+                📋 Für Apple Music kopieren
+              </button>
+            </div>
+          </article>
+        
+          <article class="album-card">
+            <div style="display: flex; justify-content: space-between; align-items: flex-start; gap: 8px;">
+              <div>
+                <div class="album-artist">Steely Dan</div>
+                <h3 class="album-name">Aja (1977) &amp; Gaucho (1980)</h3>
+              </div>
+              <span class="badge badge-stereo">Stereo Hi-Res Lossless (Atmos Aus)</span>
+            </div>
+
+            <div class="album-tracks">
+              <strong>Anspieltipp:</strong> Aja (Drum-Solo), Hey Nineteen <span style="color: var(--text-secondary);">| Drummer: Steve Gadd / Rick Marotta</span>
+            </div>
+
+            <p style="font-size: 0.86rem; color: var(--text-secondary); flex-grow: 1;">
+              Bei 'Hey Nineteen' stoppt jede Schwingung sofort (staubtrockener Studio-Punch). Im Titelsong 'Aja' liefert Steve Gadd ein Tom-Solo mit atemberaubender Tiefenstaffelung.
+            </p>
+
+            <div style="display: flex; justify-content: space-between; align-items: center; gap: 8px; padding-top: 10px; border-top: 1px solid var(--border-subtle); font-size: 0.8rem;">
+              <span style="color: var(--accent-gold-light); font-weight: 600;">🥇 HiFiMAN HE400se / Sony MDR-M1</span>
+              <button type="button" class="btn btn-secondary btn-sm" onclick="copyText('Steely Dan Aja (Drum-Solo)', 'Suchbegriff für Apple Music kopiert!')">
+                📋 Für Apple Music kopieren
+              </button>
+            </div>
+          </article>
+        
+          <article class="album-card">
+            <div style="display: flex; justify-content: space-between; align-items: flex-start; gap: 8px;">
+              <div>
+                <div class="album-artist">The Rolling Stones</div>
+                <h3 class="album-name">Beggars Banquet (1968) &amp; Sticky Fingers (1971)</h3>
+              </div>
+              <span class="badge badge-stereo">Stereo Lossless (2002 ABKCO Remaster)</span>
+            </div>
+
+            <div class="album-tracks">
+              <strong>Anspieltipp:</strong> Sympathy For The Devil, Can’t You Hear Me Knocking, Gimme Shelter <span style="color: var(--text-secondary);">| Drummer: Charlie Watts</span>
+            </div>
+
+            <p style="font-size: 0.86rem; color: var(--text-secondary); flex-grow: 1;">
+              Charlie Watts' kleines, klassisches Gretsch-Set zusammen mit den hölzernen Congas. Knochentrockene, ungeschönte Kessel-Dynamik mit viel Luft zwischen den Schlägen.
+            </p>
+
+            <div style="display: flex; justify-content: space-between; align-items: center; gap: 8px; padding-top: 10px; border-top: 1px solid var(--border-subtle); font-size: 0.8rem;">
+              <span style="color: var(--accent-gold-light); font-weight: 600;">🥇 Sony MDR-M1 / HiFiMAN HE400se</span>
+              <button type="button" class="btn btn-secondary btn-sm" onclick="copyText('The Rolling Stones Sympathy For The Devil', 'Suchbegriff für Apple Music kopiert!')">
+                📋 Für Apple Music kopieren
+              </button>
+            </div>
+          </article>
+        
+          <article class="album-card">
+            <div style="display: flex; justify-content: space-between; align-items: flex-start; gap: 8px;">
+              <div>
+                <div class="album-artist">Bruce Springsteen</div>
+                <h3 class="album-name">Darkness on the Edge of Town (1978) &amp; Nebraska (1982)</h3>
+              </div>
+              <span class="badge badge-stereo">Stereo Lossless (Album Collection Remaster)</span>
+            </div>
+
+            <div class="album-tracks">
+              <strong>Anspieltipp:</strong> Streets of Fire, Badlands, State Trooper, Atlantic City <span style="color: var(--text-secondary);">| Drummer: Max Weinberg</span>
+            </div>
+
+            <p style="font-size: 0.86rem; color: var(--text-secondary); flex-grow: 1;">
+              'Mighty Max' Weinberg mit schweren, peitschenden Stand-Toms ('Streets of Fire') bzw. dunklem, erdigem Grundton ('State Trooper') – ganz ohne die zu hohe Snare aus dem Intro von 'Born in the U.S.A.'.
+            </p>
+
+            <div style="display: flex; justify-content: space-between; align-items: center; gap: 8px; padding-top: 10px; border-top: 1px solid var(--border-subtle); font-size: 0.8rem;">
+              <span style="color: var(--accent-gold-light); font-weight: 600;">🥇 Sennheiser HD 599 / Sony MDR-M1</span>
+              <button type="button" class="btn btn-secondary btn-sm" onclick="copyText('Bruce Springsteen Streets of Fire', 'Suchbegriff für Apple Music kopiert!')">
+                📋 Für Apple Music kopieren
+              </button>
+            </div>
+          </article>
+        
+          <article class="album-card">
+            <div style="display: flex; justify-content: space-between; align-items: flex-start; gap: 8px;">
+              <div>
+                <div class="album-artist">Muddy Waters</div>
+                <h3 class="album-name">Folk Singer (1964 / 2014 Remaster)</h3>
+              </div>
+              <span class="badge badge-stereo">Stereo Hi-Res Lossless</span>
+            </div>
+
+            <div class="album-tracks">
+              <strong>Anspieltipp:</strong> Good Morning Little School Girl <span style="color: var(--text-secondary);">| Drummer: Clifton James</span>
+            </div>
+
+            <p style="font-size: 0.86rem; color: var(--text-secondary); flex-grow: 1;">
+              Komplett akustische Referenzaufnahme. Wenn die Trommel einsetzt, gibt es null Beckenzischen – man hört das pure, tiefe, trockene Atmen des Holzkessels im Raum.
+            </p>
+
+            <div style="display: flex; justify-content: space-between; align-items: center; gap: 8px; padding-top: 10px; border-top: 1px solid var(--border-subtle); font-size: 0.8rem;">
+              <span style="color: var(--accent-gold-light); font-weight: 600;">🥇 HiFiMAN HE400se / Sennheiser HD 599</span>
+              <button type="button" class="btn btn-secondary btn-sm" onclick="copyText('Muddy Waters Good Morning Little School Girl', 'Suchbegriff für Apple Music kopiert!')">
+                📋 Für Apple Music kopieren
+              </button>
+            </div>
+          </article>
+        
+          <article class="album-card">
+            <div style="display: flex; justify-content: space-between; align-items: flex-start; gap: 8px;">
+              <div>
+                <div class="album-artist">Stevie Ray Vaughan &amp; ZZ Top</div>
+                <h3 class="album-name">Texas Flood (1983) &amp; Tres Hombres (1973)</h3>
+              </div>
+              <span class="badge badge-stereo">Stereo Lossless</span>
+            </div>
+
+            <div class="album-tracks">
+              <strong>Anspieltipp:</strong> Tin Pan Alley (Dirty Pool), La Grange, Jesus Just Left Chicago <span style="color: var(--text-secondary);">| Drummer: Chris Layton / Frank Beard</span>
+            </div>
+
+            <p style="font-size: 0.86rem; color: var(--text-secondary); flex-grow: 1;">
+              Staubtrockener Texas-Blues-Punch. Bei 'Tin Pan Alley' und 'La Grange' verschmelzen Basslauf und tief gestimmte Toms zu einer physisch spürbaren Einheit.
+            </p>
+
+            <div style="display: flex; justify-content: space-between; align-items: center; gap: 8px; padding-top: 10px; border-top: 1px solid var(--border-subtle); font-size: 0.8rem;">
+              <span style="color: var(--accent-gold-light); font-weight: 600;">🥇 Sony MDR-M1 / Sennheiser HD 599</span>
+              <button type="button" class="btn btn-secondary btn-sm" onclick="copyText('Stevie Ray Vaughan &amp; ZZ Top Tin Pan Alley (Dirty Pool)', 'Suchbegriff für Apple Music kopiert!')">
+                📋 Für Apple Music kopieren
+              </button>
+            </div>
+          </article>
+        
+          <article class="album-card">
+            <div style="display: flex; justify-content: space-between; align-items: flex-start; gap: 8px;">
+              <div>
+                <div class="album-artist">Paul Simon</div>
+                <h3 class="album-name">The Rhythm of the Saints (1990)</h3>
+              </div>
+              <span class="badge badge-stereo">Stereo Lossless</span>
+            </div>
+
+            <div class="album-tracks">
+              <strong>Anspieltipp:</strong> The Obvious Child <span style="color: var(--text-secondary);">| Drummer: Olodum (Straßentrommler in Salvador da Bahia)</span>
+            </div>
+
+            <p style="font-size: 0.86rem; color: var(--text-secondary); flex-grow: 1;">
+              Aufgenommen auf einem Platz in Brasilien: Eine Wand aus großen, traditionellen Hand- und Kesseltrommeln mit lebensnaher Impulstreue im Bereich 80–250 Hz.
+            </p>
+
+            <div style="display: flex; justify-content: space-between; align-items: center; gap: 8px; padding-top: 10px; border-top: 1px solid var(--border-subtle); font-size: 0.8rem;">
+              <span style="color: var(--accent-gold-light); font-weight: 600;">🥇 Sony MDR-M1 / HiFiMAN HE400se</span>
+              <button type="button" class="btn btn-secondary btn-sm" onclick="copyText('Paul Simon The Obvious Child', 'Suchbegriff für Apple Music kopiert!')">
+                📋 Für Apple Music kopieren
+              </button>
+            </div>
+          </article>
+        
+          <article class="album-card">
+            <div style="display: flex; justify-content: space-between; align-items: flex-start; gap: 8px;">
+              <div>
+                <div class="album-artist">Tool</div>
+                <h3 class="album-name">Fear Inoculum (2019)</h3>
+              </div>
+              <span class="badge badge-stereo">Stereo Hi-Res Lossless (96 kHz)</span>
+            </div>
+
+            <div class="album-tracks">
+              <strong>Anspieltipp:</strong> Pneuma (ab Min 06:00), Chocolate Chip Trip <span style="color: var(--text-secondary);">| Drummer: Danny Carey</span>
+            </div>
+
+            <p style="font-size: 0.86rem; color: var(--text-secondary); flex-grow: 1;">
+              Danny Carey spielt eines der am besten mikrofonierten Drumkits der Moderne. Die Stand-Toms ab Minute 06:00 in 'Pneuma' stehen mit gigantischem Holzkörper im Raum.
+            </p>
+
+            <div style="display: flex; justify-content: space-between; align-items: center; gap: 8px; padding-top: 10px; border-top: 1px solid var(--border-subtle); font-size: 0.8rem;">
+              <span style="color: var(--accent-gold-light); font-weight: 600;">🥇 Sony MDR-M1 / HiFiMAN HE400se</span>
+              <button type="button" class="btn btn-secondary btn-sm" onclick="copyText('Tool Pneuma (ab Min 06:00)', 'Suchbegriff für Apple Music kopiert!')">
+                📋 Für Apple Music kopieren
+              </button>
+            </div>
+          </article>
+        
+          <article class="album-card">
+            <div style="display: flex; justify-content: space-between; align-items: flex-start; gap: 8px;">
+              <div>
+                <div class="album-artist">Elton John &amp; Tom Petty</div>
+                <h3 class="album-name">Goodbye Yellow Brick Road (1973) &amp; Wildflowers (1994)</h3>
+              </div>
+              <span class="badge badge-atmos">Dolby Atmos („Immer ein“)</span>
+            </div>
+
+            <div class="album-tracks">
+              <strong>Anspieltipp:</strong> Funeral for a Friend / Love Lies Bleeding, You Don't Know How It Feels <span style="color: var(--text-secondary);">| Drummer: Nigel Olsson / Steve Ferrone</span>
+            </div>
+
+            <p style="font-size: 0.86rem; color: var(--text-secondary); flex-grow: 1;">
+              Schwere, tief gestimmte 70er-Tom-Fills von Nigel Olsson und Steve Ferrones trockener, holzbetonter 90er-Groove mit riesigem dynamischem Spielraum.
+            </p>
+
+            <div style="display: flex; justify-content: space-between; align-items: center; gap: 8px; padding-top: 10px; border-top: 1px solid var(--border-subtle); font-size: 0.8rem;">
+              <span style="color: var(--accent-gold-light); font-weight: 600;">🥇 Sennheiser HD 599 / Sony MDR-M1</span>
+              <button type="button" class="btn btn-secondary btn-sm" onclick="copyText('Elton John &amp; Tom Petty Funeral for a Friend / Love Lies Bleeding', 'Suchbegriff für Apple Music kopiert!')">
+                📋 Für Apple Music kopieren
+              </button>
+            </div>
+          </article>
+        
+          <article class="album-card">
+            <div style="display: flex; justify-content: space-between; align-items: flex-start; gap: 8px;">
+              <div>
+                <div class="album-artist">Buckingham Nicks, Jackson Browne, Ry Cooder &amp; The War on Drugs</div>
+                <h3 class="album-name">Buckingham Nicks (1973), The Pretender (1976), Paris, Texas (1984), Lost in the Dream (2014)</h3>
+              </div>
+              <span class="badge badge-stereo">Stereo Lossless / Hi-Res</span>
+            </div>
+
+            <div class="album-tracks">
+              <strong>Anspieltipp:</strong> Frozen Love, The Fuse, Paris, Texas, Under the Pressure <span style="color: var(--text-secondary);">| Drummer: Diverse West-Coast- &amp; Indie-Drummer</span>
+            </div>
+
+            <p style="font-size: 0.86rem; color: var(--text-secondary); flex-grow: 1;">
+              Die Keimzelle des Fleetwood-Mac-Sounds ('Frozen Love') kombiniert mit akustischer Weite der Rocky Mountains und endloser Highway-Atmosphäre.
+            </p>
+
+            <div style="display: flex; justify-content: space-between; align-items: center; gap: 8px; padding-top: 10px; border-top: 1px solid var(--border-subtle); font-size: 0.8rem;">
+              <span style="color: var(--accent-gold-light); font-weight: 600;">🥇 Sennheiser HD 599 / HiFiMAN HE400se</span>
+              <button type="button" class="btn btn-secondary btn-sm" onclick="copyText('Buckingham Nicks, Jackson Browne, Ry Cooder &amp; The War on Drugs Frozen Love', 'Suchbegriff für Apple Music kopiert!')">
+                📋 Für Apple Music kopieren
+              </button>
+            </div>
+          </article>
+        </div>
+    </section>
+
+    <!-- ========================================================================
+         TAB 3: RÄUME, HARDWARE & IPADOS-SPICKZETTEL
+         ======================================================================== -->
+    <section id="tab-hardware" class="tab-panel">
+      <!-- Räume Gegenüberstellung -->
+      <div class="hardware-grid">
+        <div class="hw-box">
+          <h3><span>⚡</span> Raum 1: Digital &amp; Apple Music (Niederohmig &lt; 1 Ω)</h3>
+          <p style="font-size: 0.87rem; color: var(--text-secondary);">
+            Maximale Impulskontrolle, kein Verbiegen des Frequenzgangs und separater Ladestrom über das Apple Magic Keyboard am iPad Air M3.
+          </p>
+          <div class="signal-flow">
+[iPad Air M3 + Magic Keyboard Pass-Through Strom]
+   │
+   ├──► Stationär (Desk):
+   │    USB-C auf USB-B (Standard USB 2.0, 1.5m)
+   │    ──► Topping D10s (ESS Sabre, 2,0 Vrms Line-Out)
+   │    ──► Cinch ──► Pro-Ject Head Box S2 (725 mW @ 32 Ω, &lt;1 Ω)
+   │    ──► 🥇 HiFiMAN HE400se / Sony MDR-M1 / MDR-7506
+   │
+   └──► Mobil / Couch:
+        USB-C direkt ──► JCALLY JM6 Pro (CX31993 + MAX97220, 1,6 Vrms, &lt;1 Ω)
+        ──► 🥇 Sennheiser HD 599 / Sony MDR-M1</div>
+          <p style="font-size: 0.84rem; color: var(--text-secondary);">
+            <strong>Warum der HiFiMAN HE400se hier fest verankert ist:</strong> Mit 91 dB/mW an 32 Ω braucht der Magnetostat hohe Stromstärke (<em>Current</em>). Am Dongle oder am Vorwiderstand des Yamaha verhungert er; an den 725 mW der Head Box S2 blüht er voll auf.
+          </p>
+        </div>
+
+        <div class="hw-box">
+          <h3><span>💿</span> Raum 2: Physisches Musikzimmer (CD &amp; Vinyl)</h3>
+          <p style="font-size: 0.87rem; color: var(--text-secondary);">
+            Klassische Analog-Kette ohne Cloud-Matching. Der Kopfhörerausgang des Yamaha 525 greift das Signal über Vorwiderstände ab (&gt; 100 Ω Ausgangsimpedanz).
+          </p>
+          <div class="signal-flow">
+[Physische Quellen in Raum 2]
+   │
+   ├──► Yamaha CD-S300 (Pure Direct, 16-Bit / 44,1 kHz)
+   │    ──► Cinch ──► Yamaha 525 Vollverstärker
+   │    ──► 6,35-mm Klinke ──► 🥇 Sony MDR-7506 / MDR-M1
+   │
+   └──► Technics Quartz SL-QD33 (AT85EP-T4P Tonabnehmer)
+        ──► Phono In (RIAA) ──► Yamaha 525 Vollverstärker
+        ──► 6,35-mm Klinke ──► 🥇 Sennheiser HD 599</div>
+          <p style="font-size: 0.84rem; color: var(--text-secondary);">
+            <strong>Das Impedanz-Geheimnis in Raum 2:</strong> Der Sennheiser HD 599 besitzt bei 100 Hz eine steile Impedanzspitze (über 200 Ω). Durch die hohe Ausgangsimpedanz des Yamaha 525 bekommt genau dieser Grundtonbereich einen warmen Schub – ideal für Vinyl! Beim hellen Sony MDR-7506 nimmt der Yamaha zudem die Schärfe aus dem CD-Hochton.
+          </p>
+        </div>
+      </div>
+
+      <!-- iPadOS & iOS 27 Spickzettel -->
+      <div class="hardware-grid">
+        <div class="hw-box">
+          <h3><span>🚀</span> iPadOS Kurzbefehl: Schneller Atmos-Umschalter</h3>
+          <p style="font-size: 0.87rem; color: var(--text-secondary);">
+            Da iPadOS bei kabelgebundenen USB-DACs (JM6 Pro / Topping D10s) den 3D-Audio-Schalter im Kontrollzentrum ausblendet, springst du mit diesem URL-Befehl in der App <strong>Kurzbefehle</strong> mit 1 Tipp direkt in die Apple-Music-Einstellungen:
+          </p>
+          <div class="code-Copy-box">
+            <span id="shortcut-url">prefs:root=MUSIC</span>
+            <button type="button" class="btn btn-primary btn-sm" onclick="copyText('prefs:root=MUSIC', 'Kurzbefehl-URL kopiert!')">
+              📋 Befehl kopieren
+            </button>
+          </div>
+          <ul style="font-size: 0.84rem; color: var(--text-secondary); padding-left: 18px; margin-top: 10px;">
+            <li><strong>Dolby Atmos „Immer ein“:</strong> Pflicht für Loudness-War-Opfer (Oasis, Green Day) &amp; echte Spatial-Referenzen (Rumours, Drive, Abbey Road).</li>
+            <li><strong>Dolby Atmos „Aus“:</strong> Für puristische 70er-Analog-Master (Steely Dan, Baba O'Riley, Led Zeppelin) ohne binaurale HRTF-Filterung.</li>
+            <li><strong>Lautstärke-Praxis:</strong> Atmos ist auf -18 LUFS normiert – Poti an der Head Box S2 von 9 Uhr auf ca. 11–12 Uhr aufdrehen!</li>
+          </ul>
+        </div>
+
+        <div class="hw-box">
+          <h3><span>🎚️</span> AirPods Max 2: Ziel-Neutralität (iOS 27 &amp; Audiogramm)</h3>
+          <p style="font-size: 0.86rem; color: var(--text-secondary);">
+            Gleicht den werkseitigen leichten Subbass-Boost (unter 60 Hz) und die dezente Präsenzsenke (2–4 kHz) für eine neutrale Studio-Wiedergabe aus:
+          </p>
+          <div class="eq-bars">
+            <div class="eq-band">
+              <div class="info-cell-label">Tiefen (Lows)</div>
+              <div class="eq-val">-1 bis -2</div>
+              <div style="font-size: 0.74rem; color: var(--text-secondary);">Strafft den Übergang zum Grundton</div>
+            </div>
+            <div class="eq-band">
+              <div class="info-cell-label">Mitten (Mids)</div>
+              <div class="eq-val">+1 Stufe</div>
+              <div style="font-size: 0.74rem; color: var(--text-secondary);">Holt Stimmen &amp; Snare nach vorn</div>
+            </div>
+            <div class="eq-band">
+              <div class="info-cell-label">Höhen (Highs)</div>
+              <div class="eq-val">0 (Neutral)</div>
+              <div style="font-size: 0.74rem; color: var(--text-secondary);">Ab Werk perfekt ausbalanciert</div>
+            </div>
+          </div>
+          <p style="font-size: 0.82rem; color: var(--text-secondary); margin-top: 8px;">
+            <strong>Alternative für höchste Präzision (Health-Audiogramm auf „Leicht“):</strong><br>
+            <code>125 Hz – 1 kHz: 20 dB</code> | <code>2 kHz: 23 dB</code> | <code>4 kHz: 24 dB</code> | <code>8 kHz: 20 dB</code>
+          </p>
+        </div>
+      </div>
+
+      <!-- Kopfhörer-Flotten-Übersicht -->
+      <div class="hw-box">
+        <h3><span>🏆</span> Deine Kopfhörer-Flotte &amp; technische Eckdaten</h3>
+        <div class="matrix-table-wrapper" style="margin-top: 12px;">
+          <table class="matrix-table" style="min-width: 750px;">
+            <thead>
+              <tr>
+                <th>Kopfhörer</th>
+                <th>Bauweise &amp; Treiber</th>
+                <th>Impedanz &amp; Wirkungsgrad</th>
+                <th>Gewicht</th>
+                <th>Stammplatz &amp; Paraderolle</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td><strong>Sony MDR-M1</strong></td>
+                <td>Geschlossen, Dynamisch</td>
+                <td>~24 Ω | &gt;102 dB/mW</td>
+                <td>ca. 216 g</td>
+                <td><span class="badge badge-room1">Raum 1 (JM6 Pro &amp; Desk)</span> Nahfeld-Monitor für trockenen Kessel-Punch (80–200 Hz) &amp; Atmos-Drums</td>
+              </tr>
+              <tr>
+                <td><strong>Sennheiser HD 599</strong></td>
+                <td>Offen, Dynamisch</td>
+                <td>50 Ω (&gt;200 Ω @ 100 Hz)</td>
+                <td>ca. 250 g</td>
+                <td><span class="badge badge-room1">Raum 1 (Couch)</span> &amp; <span class="badge badge-room2">Raum 2 (Vinyl)</span> Kuschelsofa, entschärft 80er-Höhen, weit in Atmos</td>
+              </tr>
+              <tr>
+                <td><strong>HiFiMAN HE400se</strong></td>
+                <td>Offen, Magnetostat (Planar)</td>
+                <td>32 Ω | 91 dB/mW (stromhungrig)</td>
+                <td>ca. 385 g</td>
+                <td><span class="badge badge-room1">Nur Raum 1 (Head Box S2)</span> Stationäre Lupe für 70er Hi-Res Stereo-Referenzen</td>
+              </tr>
+              <tr>
+                <td><strong>Sony MDR-7506</strong></td>
+                <td>Geschlossen, Dynamisch (faltbar)</td>
+                <td>63 Ω | 106 dB/mW</td>
+                <td>ca. 230 g</td>
+                <td><span class="badge badge-room2">Raum 2 (CD-S300)</span> &amp; A/B-Test an Head Box S2. 100-Hz-Oberbass-Klick &amp; Studio-Kontrolle</td>
+              </tr>
+              <tr>
+                <td><strong>Philips Fidelio X2HR</strong></td>
+                <td>Offen, Dynamisch</td>
+                <td>30 Ω | 100 dB/mW</td>
+                <td>ca. 380 g</td>
+                <td>Opulenter „Kinosessel“ mit V-Signatur &amp; weitem Tiefton-Fundament</td>
+              </tr>
+              <tr>
+                <td><strong>Philips SHP9500</strong></td>
+                <td>Offen, Dynamisch</td>
+                <td>32 Ω | 101 dB/mW</td>
+                <td>ca. 320 g</td>
+                <td>Luftige, unaufgeregte Mittenneutralität für Akustik &amp; Gesang</td>
+              </tr>
+              <tr>
+                <td><strong>AirPods Max 2 / Pro 3</strong></td>
+                <td>Geschlossen, Apple H2 DSP</td>
+                <td>Aktiv (USB-C DAC bis 24/48)</td>
+                <td>ca. 385 g</td>
+                <td>Film, Serien, Spatial Audio mit Head-Tracking &amp; mobiles Hören mit ANC</td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+      </div>
+    </section>
+  </div>
+
+  <!-- ==========================================================================
+       MODAL: ANLEITUNG FÜR IPAD / IPHONE & STANDALONE NUTZUNG
+       ========================================================================== -->
+  <div id="help-modal" class="modal-backdrop" onclick="closeHelpModal(event)">
+    <div class="modal-content" onclick="event.stopPropagation()">
+      <div class="modal-header">
+        <h2 style="font-size: 1.25rem; color: var(--accent-gold-light);">📱 So nutzt du das Cockpit außerhalb von Gemini</h2>
+        <button type="button" class="btn btn-secondary btn-sm" onclick="closeHelpModal()">✕ Schließen</button>
+      </div>
+      <div class="step-list">
+        <div class="step-item">
+          <h4>1. Als eigenständige Datei herunterladen</h4>
+          <p>
+            Tippe oben rechts auf den goldenen Button <strong>„📲 Als Offline-App (.html) speichern“</strong>. Dadurch wird die Datei <code>HiFi-Entscheidungs-Cockpit.html</code> direkt im Ordner „Downloads“ (in der <strong>Dateien-App</strong> auf deinem iPad Air M3 oder iPhone) gespeichert. Sie benötigt keinerlei Internetverbindung.
+          </p>
+        </div>
+        <div class="step-item">
+          <h4>2. Auf den iPad-Home-Bildschirm oder ins Dock legen</h4>
+          <p>
+            Öffne die gespeicherte HTML-Datei in <strong>Safari</strong> (oder hoste sie kurz lokal/iCloud Drive), tippe oben auf das <strong>Teilen-Symbol</strong> (Quadrat mit Pfeil nach oben) und wähle <strong>„Zum Home-Bildschirm“</strong>. Durch die integrierten Apple-Web-App-Tags startet das Cockpit dann im Vollbildmodus wie eine native App.
+          </p>
+        </div>
+        <div class="step-item">
+          <h4>3. Den „Atmos Toggle“-Kurzbefehl einrichten</h4>
+          <p>
+            Öffne die Apple-App <strong>Kurzbefehle</strong> → Tippe auf <strong>+</strong> → Aktion <strong>„URL öffnen“</strong> hinzufügen → Trage <code>prefs:root=MUSIC</code> ein → Zum Home-Bildschirm hinzufügen. So schaltest du Dolby Atmos für deine Kabel-DACs (JM6 Pro &amp; Topping D10s) mit zwei schnellen Tipps um.
+          </p>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- TOAST CONTAINER -->
+  <div id="toast-container" class="toast-container"></div>
+
+  <!-- ==========================================================================
+       APPLICATION LOGIC & DATA (VANILLA JS)
+       ========================================================================== -->
+  <script>
+    // 1. Vollständiger Datensatz der 8 Szenarien
+    const SCENARIOS = [
+      {
+        id: 1,
+        title: "Opfer des Loudness War",
+        subtitle: "Dynamische Erholung & freier Kessel-Punch",
+        moodKey: "punch",
+        moodLabel: "Rhythmus-Punch & Dynamik",
+        epoch: "1992–2015 | Extrem komprimiertes Stereo (DR5–DR7)",
+        formatKey: "atmos",
+        formatBadge: "Dolby Atmos („Immer ein“)",
+        badgeType: "atmos",
+        settings: "Dolby Atmos: Immer ein | Sound Check: Aus | EQ: Aus",
+        roomKeys: ["room1-couch", "room1-desk"],
+        roomLabel: "Raum 1 (Digital / Streaming)",
+        chain: "iPad/iPhone → JCALLY JM6 Pro (Couch) oder Topping D10s → Pro-Ject Head Box S2 (Desk)",
+        podium: [
+          { rank: "🥇", name: "Sony MDR-M1", role: "Nahfeld-Kessel-Kick" },
+          { rank: "🥈", name: "Sennheiser HD 599", role: "Entspannte 3D-Weite" },
+          { rank: "🥉", name: "Philips Fidelio X2HR", role: "Große Kino-Bühne" }
+        ],
+        reason: "Die strikte <strong>-18-LUFS-Normierung</strong> von Dolby Atmos verbietet Brickwall-Limiter und dekomprimiert die Rhythmusgruppe (auf ~DR12). Gitarrenwände wandern im 3D-Raum nach außen, sodass Snare und Toms endlich frei atmen und mit echtem Kesselkörper einschlagen.",
+        albums: "Oasis (Definitely Maybe, Morning Glory – Live Forever, Wonderwall), Nirvana (Nevermind – In Bloom), Green Day (American Idiot), Rush (Vapor Trails), Metallica (Black Album – Sad But True)"
+      },
+      {
+        id: 2,
+        title: "Audiophile Stereo-Referenzen",
+        subtitle: "Kritisches Eintauchen & maximale Planar-Tiefe",
+        moodKey: "analytic",
+        moodLabel: "Analytisch & Fokus",
+        epoch: "1965–1979 | Analoge Masterbänder mit hoher Eigendynamik (DR12+)",
+        formatKey: "stereo",
+        formatBadge: "Stereo (Hi-Res / Lossless)",
+        badgeType: "stereo",
+        settings: "Dolby Atmos: Aus | Sound Check: Aus | EQ: Aus | iPad-Pegel: 100%",
+        roomKeys: ["room1-desk"],
+        roomLabel: "Raum 1 (Stationär am Desk)",
+        chain: "iPad Air M3 → Topping D10s (2,0 Vrms) → Pro-Ject Head Box S2 (725 mW @ 32 Ω)",
+        podium: [
+          { rank: "🥇", name: "HiFiMAN HE400se", role: "Planar-Referenz & Transienten" },
+          { rank: "🥈", name: "Sony MDR-M1", role: "Trockener Kessel-Fokus" },
+          { rank: "🥉", name: "Philips SHP9500", role: "Offene Mitten-Neutralität" }
+        ],
+        reason: "Reiner, unverfälschter <strong>2-Kanal-Mix ohne binaurale HRTF-Phasenfilterung</strong>. Die magnetostatischen Folien des HE400se nutzen die hohe Stromlieferfähigkeit (725 mW) und die Ausgangsimpedanz von &lt; 1 Ω der Head Box S2 für blitzschnelle Impulse voll aus.",
+        albums: "The Who (Who's Next – Baba O'Riley Steven Wilson Mix), Steely Dan (Aja, Gaucho – Hey Nineteen), Led Zeppelin (IV – When the Levee Breaks), Supertramp (Crime of the Century – School), Dire Straits (Dire Straits)"
+      },
+      {
+        id: 3,
+        title: "Spatial-Audio-Highlights",
+        subtitle: "Immersiver 3D-Klangraum & Konzertsaal-Loge",
+        moodKey: "immersive",
+        moodLabel: "Immersiv & 3D-Bühne",
+        epoch: "Ab 2016 | Sorgfältige Mehrkanal-Mixe von den Original-Mehrspurbändern",
+        formatKey: "atmos",
+        formatBadge: "Dolby Atmos („Immer ein“)",
+        badgeType: "atmos",
+        settings: "Dolby Atmos: Immer ein | Sound Check: Aus | EQ: Aus",
+        roomKeys: ["room1-couch", "room1-desk"],
+        roomLabel: "Raum 1 (Couch & Desk)",
+        chain: "iPad Air M3 → JCALLY JM6 Pro (Couch) oder Topping D10s → Head Box S2 (Desk)",
+        podium: [
+          { rank: "🥇", name: "Sennheiser HD 599", role: "Offene Konzertsaal-Loge" },
+          { rank: "🥈", name: "Sony MDR-M1", role: "Griffige Kessel-Kontur" },
+          { rank: "🥉", name: "AirPods Max 2", role: "3D-Audio / Head-Tracking" }
+        ],
+        reason: "Die offene Bauweise des <strong>HD 599</strong> fächert das binaurale 3D-Klangfeld natürlich nach außen auf. Tief gestimmte Stand-Toms stehen frei im Raum, während der samtige Grundton etwaige Schärfen (z. B. die Uhren bei Pink Floyds <em>Time</em>) komplett abfedert.",
+        albums: "Fleetwood Mac (Rumours – The Chain, Dreams), R.E.M. (Automatic for the People – Drive), The Beatles (Abbey Road – Come Together Giles Martin Mix), Pink Floyd (Dark Side of the Moon 50th – Time), Elton John (Goodbye Yellow Brick Road), Tom Petty (Wildflowers)"
+      },
+      {
+        id: 4,
+        title: "Schrille & spitze Masterings",
+        subtitle: "Regenerativer Feierabend ohne Hörermüdung",
+        moodKey: "relax",
+        moodLabel: "Kuschelsofa & Entspannung",
+        epoch: "1980–1991 | Frühe Digitaltechnik, Gated-Reverb-Snare & schneidende Höhen",
+        formatKey: "stereo",
+        formatBadge: "Stereo (Lossless)",
+        badgeType: "stereo",
+        settings: "Dolby Atmos: Aus | Sound Check: Aus | EQ: Aus",
+        roomKeys: ["room1-couch"],
+        roomLabel: "Raum 1 (Couch / Bett)",
+        chain: "iPad / iPhone → JCALLY JM6 Pro (&lt; 1 Ω, 1,6 Vrms)",
+        podium: [
+          { rank: "🥇", name: "Sennheiser HD 599", role: "250g Kuschelsofa-Champion" },
+          { rank: "🥈", name: "Philips Fidelio X2HR", role: "Warmes Bass-Fundament" },
+          { rank: "🥉", name: "AirPods Max 2", role: "Sanfter Superhochton" }
+        ],
+        reason: "Der sanfte Hochton-Roll-off, die warmen Mitten und das federleichte <strong>250-Gramm-Design</strong> des braunen HD 599 nehmen peitschenden 80er-Snares, schrillen Synthesizern und spitzen E-Gitarren jede Aggressivität.",
+        albums: "Bruce Springsteen (Born in the U.S.A., Badlands, The River), frühe 80er Stadium-Rock-Produktionen & dünne CD-Transfers"
+      },
+      {
+        id: 5,
+        title: "Kritisches Transienten- & Kessel-Tuning",
+        subtitle: "Analytischer Studio-Nahfeld- & A/B-Hörvergleich",
+        moodKey: "analytic",
+        moodLabel: "Analytisch & Fokus",
+        epoch: "Universell | Fokus auf trockene Studio-Drums & Stand-Toms (80–250 Hz)",
+        formatKey: "stereo",
+        formatBadge: "Stereo (Hi-Res Lossless)",
+        badgeType: "stereo",
+        settings: "Dolby Atmos: Aus | Sound Check: Aus | Paralleler Output aktiv",
+        roomKeys: ["room1-desk"],
+        roomLabel: "Raum 1 (Desk A/B-Station)",
+        chain: "iPad Air M3 → Topping D10s → Pro-Ject Head Box S2 (6,35-mm & 3,5-mm Buchsen parallel)",
+        podium: [
+          { rank: "🥇", name: "Sony MDR-M1", role: "Voller Kessel-Körper & Impact" },
+          { rank: "🥈", name: "Sony MDR-7506", role: "100-Hz-Oberbass-Klick & Lupe" },
+          { rank: "🥉", name: "HiFiMAN HE400se", role: "Schnellstes Ausschwingen" }
+        ],
+        reason: "Die beiden parallelen Ausgänge der Head Box S2 erlauben den sofortigen Vergleich: Der <strong>MDR-M1</strong> zeigt das volle Holzvolumen der Stand-Toms und reicht bis in den Tiefbass, während der <strong>MDR-7506</strong> den Anschlag bei 100 Hz wie unter einem Mikroskop isoliert.",
+        albums: "Fleetwood Mac (Tusk), Peter Gabriel (Melt – Biko, Intruder), Paul Simon (The Obvious Child), Tool (Fear Inoculum – Pneuma), Muddy Waters (Folk Singer – Good Morning Little School Girl)"
+      },
+      {
+        id: 6,
+        title: "Physische CD-Erstausgaben",
+        subtitle: "Bitperfekter Silberling-Genuss ohne Loudness War",
+        moodKey: "analytic",
+        moodLabel: "Analytisch & Fokus",
+        epoch: "1982–1995 | Unkomprimierte Original-CDs (DR14–DR16)",
+        formatKey: "cd",
+        formatBadge: "CD-Audio (16-Bit / 44,1 kHz)",
+        badgeType: "analog",
+        settings: "Pure Direct am Yamaha CD-S300 aktiv (Umgeht Apple Cloud-Matching)",
+        roomKeys: ["room2-analog"],
+        roomLabel: "Raum 2 (Physisches Musikzimmer)",
+        chain: "Yamaha CD-S300 → Cinch → Yamaha 525 Vollverstärker (6,35-mm Kopfhörerausgang)",
+        podium: [
+          { rank: "🥇", name: "Sony MDR-7506", role: "Gezähmte Studio-Präzision" },
+          { rank: "🥈", name: "Sony MDR-M1", role: "Kompakter Kick-Monitor" },
+          { rank: "🥉", name: "Sennheiser HD 599", role: "Warme Vollmundigkeit" }
+        ],
+        reason: "Verhindert, dass Apple Music deine gerippten Original-CDs durch komprimierte Cloud-Remaster ersetzt. Die höhere Ausgangsimpedanz (&gt; 100 Ω) des <strong>Yamaha 525</strong> nimmt dem <strong>MDR-7506</strong> die analytische Schärfe und gibt ihm ein volleres Oberbass-Fundament.",
+        albums: "Dire Straits (Brothers in Arms – Original 1985 CD mit DR16), frühe unkomprimierte Erstauflagen der 80er und frühen 90er"
+      },
+      {
+        id: 7,
+        title: "Physisches Vinyl",
+        subtitle: "Haptischer Ritual-Genuss & analoger Kaminfeuer-Schmelz",
+        moodKey: "relax",
+        moodLabel: "Kuschelsofa & Entspannung",
+        epoch: "Historisch & Reissue | Analoge Schallplattenpressungen",
+        formatKey: "vinyl",
+        formatBadge: "Phono-Analog (RIAA)",
+        badgeType: "analog",
+        settings: "Analoge RIAA-Entzerrung über Phono-Eingang des Yamaha 525",
+        roomKeys: ["room2-analog"],
+        roomLabel: "Raum 2 (Physisches Musikzimmer)",
+        chain: "Technics Quartz SL-QD33 (AT85EP-T4P) → Yamaha 525 (Phono In → Kopfhörerausgang)",
+        podium: [
+          { rank: "🥇", name: "Sennheiser HD 599", role: "100-Hz-Impedanz-Boost („Kaminfeuer“)" },
+          { rank: "🥈", name: "Sony MDR-M1", role: "Trockener Rillen-Punch" },
+          { rank: "🥉", name: "Philips Fidelio X2HR", role: "Warmes Breitwand-Kino" }
+        ],
+        reason: "Die Vorwiderstände des Yamaha 525 interagieren gezielt mit der <strong>100-Hz-Impedanzspitze (&gt; 200 Ω) des HD 599</strong>. Das erzeugt einen wunderbaren, warmen Grundton-Schub für Schallplatten. (Der HE400se bleibt wegen seines Stromhungers strikt in Raum 1).",
+        albums: "Red Hot Chili Peppers (Stadium Arcadium Vinyl-Master), 70er West-Coast-Pressungen (Fleetwood Mac, Eagles, Neil Young – Harvest)"
+      },
+      {
+        id: 8,
+        title: "Film, Serien & Mobile Mobilität",
+        subtitle: "Blockbuster-Kino, Reise-Komfort & Computational Audio",
+        moodKey: "immersive",
+        moodLabel: "Immersiv & 3D-Bühne",
+        epoch: "Modernes Streaming | Apple TV+, Blockbuster & Unterwegs",
+        formatKey: "atmos",
+        formatBadge: "Dolby Atmos / Spatial Audio",
+        badgeType: "atmos",
+        settings: "Kontrollzentrum: 3D-Audio Ein | iOS 27 EQ: Tiefen -1/-2, Mitten +1, Höhen 0",
+        roomKeys: ["mobile-airpods"],
+        roomLabel: "Raum-unabhängig / Mobil",
+        chain: "AirPods Max 2 (Bluetooth AAC oder USB-C-Kabel 24-Bit/48 kHz Lossless) & AirPods Pro 3",
+        podium: [
+          { rank: "🥇", name: "AirPods Max 2", role: "Referenz für Film & Spatial Audio" },
+          { rank: "🥈", name: "AirPods Pro 3", role: "Ultraleichte Mobilität & ANC" },
+          { rank: "🥉", name: "Sony MDR-M1", role: "Kabel-Backup am JM6 Pro (LTGEM Case)" }
+        ],
+        reason: "Perfekte Verzahnung aus <strong>Apple H2-Chip</strong>, adaptiver Einmessung und ANC. Über das USB-C-Kabel decodiert der interne DAC der echten AirPods Max 2 nativen 24-Bit/48 kHz Lossless-Sound ohne doppelte Analog-Umwandlung.",
+        albums: "Hans Zimmer (The Dark Knight – Why So Serious? ab Min 03:26), O-Zone Percussion Group (Jazz Variants), Apple TV+ Serien & Filme"
+      }
+    ];
+
+    // 2. Vollständiger Datensatz der Kessel-Punch & Alben-Bibliothek (Tab 2)
+    const ALBUMS = [
+      {
+        artist: "Fleetwood Mac",
+        album: "Tusk (1979)",
+        tracks: "Tusk",
+        drummer: "Mick Fleetwood",
+        category: "70s-kessel",
+        categoryLabel: "70er Kessel-Punch (80–250 Hz)",
+        format: "Stereo",
+        formatDetail: "Stereo Lossless (Atmos Aus)",
+        headphone: "🥇 Sony MDR-M1 / HD 599",
+        notes: "Das absolute Paradebeispiel: Große, kaum gedämpfte Toms mit Raum-Mikrofonen aufgenommen. Archaischer, hölzerner Kessel-Rhythmus komplett ohne wummernden Subbass."
+      },
+      {
+        artist: "Fleetwood Mac",
+        album: "Rumours (1977)",
+        tracks: "The Chain, Dreams, Go Your Own Way",
+        drummer: "Mick Fleetwood",
+        category: "atmos-retter",
+        categoryLabel: "Dolby Atmos Referenz & 70er Kessel",
+        format: "Atmos",
+        formatDetail: "Dolby Atmos („Immer ein“) & Hi-Res Stereo",
+        headphone: "🥇 Sennheiser HD 599 / Sony MDR-M1",
+        notes: "Mick Fleetwoods tief gestimmte Stand-Toms und Flams vor dem Bass-Breakdown in 'The Chain' stehen im Atmos-Mix mit enormer physischer Fellmasse frei im Raum."
+      },
+      {
+        artist: "The Who",
+        album: "Who’s Next (1971 – Steven Wilson Remix)",
+        tracks: "Baba O'Riley",
+        drummer: "Keith Moon",
+        category: "70s-kessel",
+        categoryLabel: "70er Kessel-Punch (80–250 Hz)",
+        format: "Stereo",
+        formatDetail: "Stereo Hi-Res Lossless",
+        headphone: "🥇 HiFiMAN HE400se / Sony MDR-M1",
+        notes: "Deine 10/10-Referenz: Keith Moon wirbelt über eine gigantische Wand aus Toms ohne metallisches Hi-Hat-Zischen. Steven Wilson hat den Bereich um 100–150 Hz phänomenal freigelegt."
+      },
+      {
+        artist: "R.E.M.",
+        album: "Automatic for the People (1992 / Atmos Mix)",
+        tracks: "Drive",
+        drummer: "Bill Berry",
+        category: "atmos-retter",
+        categoryLabel: "Dolby Atmos Referenz",
+        format: "Atmos",
+        formatDetail: "Dolby Atmos („Immer ein“)",
+        headphone: "🥇 Sennheiser HD 599 / Sony MDR-M1",
+        notes: "Wenn Bill Berrys Drumset nach der akustischen Einleitung einsetzt, federt der natürliche Raum der tiefen Toms und der Bassdrum trocken und greifbar ins Ohr."
+      },
+      {
+        artist: "The Beatles",
+        album: "Abbey Road (2019 Giles Martin Mix)",
+        tracks: "Come Together, The End",
+        drummer: "Ringo Starr",
+        category: "atmos-retter",
+        categoryLabel: "Dolby Atmos Referenz",
+        format: "Atmos",
+        formatDetail: "Dolby Atmos („Immer ein“)",
+        headphone: "🥇 Sony MDR-M1 / Sennheiser HD 599",
+        notes: "Ringo dämpfte seine Felle mit Geschirrtüchern ab. Der dunkle, holzige Tom-Lauf im Intro von 'Come Together' reißt unmittelbar nach dem Anschlag ab und hat in Atmos riesigen Headroom."
+      },
+      {
+        artist: "Oasis",
+        album: "Definitely Maybe & (What's the Story) Morning Glory?",
+        tracks: "Live Forever, Wonderwall, Supersonic",
+        drummer: "Tony McCarroll / Alan White",
+        category: "atmos-retter",
+        categoryLabel: "Dolby Atmos Loudness-War-Retter",
+        format: "Atmos",
+        formatDetail: "Dolby Atmos („Immer ein“ Pflicht!)",
+        headphone: "🥇 Sony MDR-M1 / Sennheiser HD 599",
+        notes: "Die Stereo-Remaster klemmen bei DR5 in der Owen-Morris-Gitarrenwand fest. In Dolby Atmos (-18 LUFS) zieht sich die Wand auseinander und das Schlagzeug klingt endlich nach echter Musik."
+      },
+      {
+        artist: "Pink Floyd",
+        album: "The Dark Side of the Moon (50th Anniversary)",
+        tracks: "Time",
+        drummer: "Nick Mason",
+        category: "atmos-retter",
+        categoryLabel: "Dolby Atmos Referenz & 70er Kessel",
+        format: "Atmos",
+        formatDetail: "Dolby Atmos („Immer ein“)",
+        headphone: "🥇 Sennheiser HD 599 / HiFiMAN HE400se",
+        notes: "Entschärft die schrillen Uhren des Stereo-Remasters und lässt Nick Masons legendäres Solo auf den Rototoms und tiefen Kesseln plastisch durch den Raum wandern."
+      },
+      {
+        artist: "Peter Gabriel",
+        album: "Peter Gabriel 3: Melt (1980)",
+        tracks: "Biko, Intruder",
+        drummer: "Phil Collins",
+        category: "70s-kessel",
+        categoryLabel: "70er/80er Tom-Urgewalt (Becken-Verbot)",
+        format: "Stereo",
+        formatDetail: "Stereo Lossless",
+        headphone: "🥇 Sony MDR-M1",
+        notes: "Der direkte Bruder von 'Tusk': Im Studio waren keinerlei Becken erlaubt. 'Biko' lebt ausschließlich von einem monumentalen, tiefen Tom-Rhythmus mit enormer Kessel-Masse."
+      },
+      {
+        artist: "Led Zeppelin",
+        album: "Led Zeppelin IV (1971)",
+        tracks: "When the Levee Breaks",
+        drummer: "John Bonham",
+        category: "70s-kessel",
+        categoryLabel: "70er Kessel-Punch (80–250 Hz)",
+        format: "Stereo",
+        formatDetail: "Stereo Hi-Res Lossless",
+        headphone: "🥇 HiFiMAN HE400se / Sony MDR-M1",
+        notes: "Mit nur drei Mikrofonen im steinernen Treppenhaus von Headley Grange aufgenommen. Das pure Volumen von Bonhams massiven Holzkesseln drückt dich förmlich in den Sessel."
+      },
+      {
+        artist: "Steely Dan",
+        album: "Aja (1977) & Gaucho (1980)",
+        tracks: "Aja (Drum-Solo), Hey Nineteen",
+        drummer: "Steve Gadd / Rick Marotta",
+        category: "studio-dry",
+        categoryLabel: "Trockener Studio-Punch & 70er Referenz",
+        format: "Stereo",
+        formatDetail: "Stereo Hi-Res Lossless (Atmos Aus)",
+        headphone: "🥇 HiFiMAN HE400se / Sony MDR-M1",
+        notes: "Bei 'Hey Nineteen' stoppt jede Schwingung sofort (staubtrockener Studio-Punch). Im Titelsong 'Aja' liefert Steve Gadd ein Tom-Solo mit atemberaubender Tiefenstaffelung."
+      },
+      {
+        artist: "The Rolling Stones",
+        album: "Beggars Banquet (1968) & Sticky Fingers (1971)",
+        tracks: "Sympathy For The Devil, Can’t You Hear Me Knocking, Gimme Shelter",
+        drummer: "Charlie Watts",
+        category: "70s-kessel",
+        categoryLabel: "70er Kessel-Punch & Holz-Resonanz",
+        format: "Stereo",
+        formatDetail: "Stereo Lossless (2002 ABKCO Remaster)",
+        headphone: "🥇 Sony MDR-M1 / HiFiMAN HE400se",
+        notes: "Charlie Watts' kleines, klassisches Gretsch-Set zusammen mit den hölzernen Congas. Knochentrockene, ungeschönte Kessel-Dynamik mit viel Luft zwischen den Schlägen."
+      },
+      {
+        artist: "Bruce Springsteen",
+        album: "Darkness on the Edge of Town (1978) & Nebraska (1982)",
+        tracks: "Streets of Fire, Badlands, State Trooper, Atlantic City",
+        drummer: "Max Weinberg",
+        category: "70s-kessel",
+        categoryLabel: "70er Kessel-Punch (Ohne 80er-Snare-Schärfe)",
+        format: "Stereo",
+        formatDetail: "Stereo Lossless (Album Collection Remaster)",
+        headphone: "🥇 Sennheiser HD 599 / Sony MDR-M1",
+        notes: "'Mighty Max' Weinberg mit schweren, peitschenden Stand-Toms ('Streets of Fire') bzw. dunklem, erdigem Grundton ('State Trooper') – ganz ohne die zu hohe Snare aus dem Intro von 'Born in the U.S.A.'."
+      },
+      {
+        artist: "Muddy Waters",
+        album: "Folk Singer (1964 / 2014 Remaster)",
+        tracks: "Good Morning Little School Girl",
+        drummer: "Clifton James",
+        category: "blues-roots",
+        categoryLabel: "Blues, Holzfaser & Erdig",
+        format: "Stereo",
+        formatDetail: "Stereo Hi-Res Lossless",
+        headphone: "🥇 HiFiMAN HE400se / Sennheiser HD 599",
+        notes: "Komplett akustische Referenzaufnahme. Wenn die Trommel einsetzt, gibt es null Beckenzischen – man hört das pure, tiefe, trockene Atmen des Holzkessels im Raum."
+      },
+      {
+        artist: "Stevie Ray Vaughan & ZZ Top",
+        album: "Texas Flood (1983) & Tres Hombres (1973)",
+        tracks: "Tin Pan Alley (Dirty Pool), La Grange, Jesus Just Left Chicago",
+        drummer: "Chris Layton / Frank Beard",
+        category: "blues-roots",
+        categoryLabel: "Blues, Holzfaser & Erdig",
+        format: "Stereo",
+        formatDetail: "Stereo Lossless",
+        headphone: "🥇 Sony MDR-M1 / Sennheiser HD 599",
+        notes: "Staubtrockener Texas-Blues-Punch. Bei 'Tin Pan Alley' und 'La Grange' verschmelzen Basslauf und tief gestimmte Toms zu einer physisch spürbaren Einheit."
+      },
+      {
+        artist: "Paul Simon",
+        album: "The Rhythm of the Saints (1990)",
+        tracks: "The Obvious Child",
+        drummer: "Olodum (Straßentrommler in Salvador da Bahia)",
+        category: "studio-dry",
+        categoryLabel: "Physischer Kessel- & Percussion-Punch",
+        format: "Stereo",
+        formatDetail: "Stereo Lossless",
+        headphone: "🥇 Sony MDR-M1 / HiFiMAN HE400se",
+        notes: "Aufgenommen auf einem Platz in Brasilien: Eine Wand aus großen, traditionellen Hand- und Kesseltrommeln mit lebensnaher Impulstreue im Bereich 80–250 Hz."
+      },
+      {
+        artist: "Tool",
+        album: "Fear Inoculum (2019)",
+        tracks: "Pneuma (ab Min 06:00), Chocolate Chip Trip",
+        drummer: "Danny Carey",
+        category: "studio-dry",
+        categoryLabel: "Moderne Stand-Tom-Referenz",
+        format: "Stereo",
+        formatDetail: "Stereo Hi-Res Lossless (96 kHz)",
+        headphone: "🥇 Sony MDR-M1 / HiFiMAN HE400se",
+        notes: "Danny Carey spielt eines der am besten mikrofonierten Drumkits der Moderne. Die Stand-Toms ab Minute 06:00 in 'Pneuma' stehen mit gigantischem Holzkörper im Raum."
+      },
+      {
+        artist: "Elton John & Tom Petty",
+        album: "Goodbye Yellow Brick Road (1973) & Wildflowers (1994)",
+        tracks: "Funeral for a Friend / Love Lies Bleeding, You Don't Know How It Feels",
+        drummer: "Nigel Olsson / Steve Ferrone",
+        category: "atmos-retter",
+        categoryLabel: "Dolby Atmos Referenz & Kessel-Masse",
+        format: "Atmos",
+        formatDetail: "Dolby Atmos („Immer ein“)",
+        headphone: "🥇 Sennheiser HD 599 / Sony MDR-M1",
+        notes: "Schwere, tief gestimmte 70er-Tom-Fills von Nigel Olsson und Steve Ferrones trockener, holzbetonter 90er-Groove mit riesigem dynamischem Spielraum."
+      },
+      {
+        artist: "Buckingham Nicks, Jackson Browne, Ry Cooder & The War on Drugs",
+        album: "Buckingham Nicks (1973), The Pretender (1976), Paris, Texas (1984), Lost in the Dream (2014)",
+        tracks: "Frozen Love, The Fuse, Paris, Texas, Under the Pressure",
+        drummer: "Diverse West-Coast- & Indie-Drummer",
+        category: "rumours-wide",
+        categoryLabel: "Rumours-Vibe & Amerikanische Weite",
+        format: "Stereo",
+        formatDetail: "Stereo Lossless / Hi-Res",
+        headphone: "🥇 Sennheiser HD 599 / HiFiMAN HE400se",
+        notes: "Die Keimzelle des Fleetwood-Mac-Sounds ('Frozen Love') kombiniert mit akustischer Weite der Rocky Mountains und endloser Highway-Atmosphäre."
+      }
+    ];
+
+    // State
+    let podiumMode = "all"; // 'all' or 'gold'
+    let viewMode = "cards"; // 'cards' or 'table'
+
+    // Tab Switching
+    function switchTab(tabId) {
+      document.querySelectorAll(".tab-panel").forEach(panel => {
+        panel.classList.toggle("active", panel.id === tabId);
+      });
+      document.querySelectorAll(".nav-tab").forEach(btn => {
+        btn.classList.toggle("active", btn.getAttribute("data-tab") === tabId);
+      });
+    }
+
+    // Podium & View Mode Toggles
+    function setPodiumMode(mode) {
+      podiumMode = mode;
+      document.getElementById("btn-podium-all").classList.toggle("active", mode === "all");
+      document.getElementById("btn-podium-gold").classList.toggle("active", mode === "gold");
+      renderMatrix();
+    }
+
+    function setViewMode(mode) {
+      viewMode = mode;
+      document.getElementById("btn-view-cards").classList.toggle("active", mode === "cards");
+      document.getElementById("btn-view-table").classList.toggle("active", mode === "table");
+      renderMatrix();
+    }
+
+    // Quick Presets
+    function applyQuickPreset(preset) {
+      resetMatrixFilters(false);
+      if (preset === "loudness") {
+        document.getElementById("filter-format").value = "atmos";
+        document.getElementById("filter-mood").value = "punch";
+      } else if (preset === "kessel") {
+        document.getElementById("filter-headphone").value = "Sony MDR-M1";
+        setPodiumMode("gold");
+      } else if (preset === "sofa") {
+        document.getElementById("filter-headphone").value = "Sennheiser HD 599";
+        setPodiumMode("gold");
+      } else if (preset === "planar") {
+        document.getElementById("filter-headphone").value = "HiFiMAN HE400se";
+        setPodiumMode("gold");
+      } else if (preset === "analog") {
+        document.getElementById("filter-room").value = "room2-analog";
+      }
+      renderMatrix();
+      showToast("Schnellfilter angewendet");
+    }
+
+    function resetMatrixFilters(render = true) {
+      document.getElementById("search-matrix").value = "";
+      document.getElementById("filter-room").value = "all";
+      document.getElementById("filter-format").value = "all";
+      document.getElementById("filter-headphone").value = "all";
+      document.getElementById("filter-mood").value = "all";
+      podiumMode = "all";
+      document.getElementById("btn-podium-all").classList.add("active");
+      document.getElementById("btn-podium-gold").classList.remove("active");
+      if (render) renderMatrix();
+    }
+
+    // Filter & Render Matrix (Tab 1)
+    function renderMatrix() {
+      const query = document.getElementById("search-matrix").value.trim().toLowerCase();
+      const room = document.getElementById("filter-room").value;
+      const format = document.getElementById("filter-format").value;
+      const headphone = document.getElementById("filter-headphone").value;
+      const mood = document.getElementById("filter-mood").value;
+
+      const filtered = SCENARIOS.filter(item => {
+        // Room filter
+        if (room !== "all" && !item.roomKeys.includes(room)) return false;
+
+        // Format filter
+        if (format !== "all" && item.formatKey !== format) return false;
+
+        // Mood filter
+        if (mood !== "all" && item.moodKey !== mood) return false;
+
+        // Headphone filter
+        if (headphone !== "all") {
+          if (podiumMode === "gold") {
+            if (item.podium[0].name !== headphone) return false;
+          } else {
+            const inPodium = item.podium.some(p => p.name === headphone);
+            if (!inPodium) return false;
+          }
+        }
+
+        // Fulltext Search
+        if (query) {
+          const haystack = [
+            item.title,
+            item.subtitle,
+            item.moodLabel,
+            item.epoch,
+            item.formatBadge,
+            item.settings,
+            item.roomLabel,
+            item.chain,
+            item.reason,
+            item.albums,
+            ...item.podium.map(p => `${p.name} ${p.role}`)
+          ].join(" ").toLowerCase();
+          if (!haystack.includes(query)) return false;
+        }
+
+        return true;
+      });
+
+      document.getElementById("matrix-counter").innerHTML = `<strong>${filtered.length}</strong> von ${SCENARIOS.length} Szenarien aktiv`;
+
+      const container = document.getElementById("matrix-output");
+
+      if (filtered.length === 0) {
+        container.innerHTML = `
+          <div class="empty-state">
+            <h3 style="color: var(--text-primary); margin-bottom: 8px;">Keine Szenarien für diese Filter-Kombination gefunden</h3>
+            <p style="margin-bottom: 16px;">Tipp: Schalte beim Kopfhörer-Filter auf „🥇🥈🥉 Ganzes Treppchen“ um oder setze die Filter zurück.</p>
+            <button type="button" class="btn btn-primary btn-sm" onclick="resetMatrixFilters()">Alle 8 Szenarien wieder einblenden</button>
+          </div>
+        `;
+        return;
+      }
+
+      if (viewMode === "cards") {
+        container.innerHTML = `<div class="scenarios-grid">${filtered.map(item => renderScenarioCard(item, headphone)).join("")}</div>`;
+      } else {
+        container.innerHTML = renderScenarioTable(filtered, headphone);
+      }
+    }
+
+    function getBadgeClass(type) {
+      if (type === "atmos") return "badge-atmos";
+      if (type === "stereo") return "badge-stereo";
+      return "badge-analog";
+    }
+
+    function renderScenarioCard(item, selectedHp) {
+      const isRoom2 = item.roomKeys.includes("room2-analog");
+      const roomBadgeClass = isRoom2 ? "badge-room2" : "badge-room1";
+
+      const podiumHtml = item.podium.map((p, idx) => {
+        const isMatch = selectedHp !== "all" && p.name === selectedHp;
+        return `
+          <div class="podium-item ${idx === 0 ? "rank-1" : ""} ${isMatch ? "highlight-match" : ""}">
+            <div class="podium-left">
+              <span>${p.rank}</span>
+              <span>${p.name}</span>
+            </div>
+            <span class="podium-role">${p.role}</span>
+          </div>
+        `;
+      }).join("");
+
+      return `
+        <article class="scenario-card">
+          <div class="card-header">
+            <div>
+              <h2 class="scenario-title">${item.title}</h2>
+              <div class="scenario-mood">${item.subtitle}</div>
+            </div>
+            <span class="badge ${getBadgeClass(item.badgeType)}">${item.formatBadge}</span>
+          </div>
+
+          <div class="info-row">
+            <div>
+              <div class="info-cell-label">Epoche & Dynamik</div>
+              <div class="info-cell-val">${item.epoch}</div>
+            </div>
+            <div>
+              <div class="info-cell-label">Apple Music / Player Settings</div>
+              <div class="info-cell-val">${item.settings}</div>
+            </div>
+          </div>
+
+          <div class="chain-box">
+            <div class="chain-box-title">
+              <span class="badge ${roomBadgeClass}" style="margin-right: 6px; padding: 2px 8px;">${item.roomLabel}</span>
+              Optimale Audiokette
+            </div>
+            <div style="color: var(--text-primary); font-weight: 600;">${item.chain}</div>
+          </div>
+
+          <div class="podium-box">
+            <div class="podium-title">Kopfhörer-Treppchen (1. bis 3. Wahl)</div>
+            <div class="podium-list">
+              ${podiumHtml}
+            </div>
+          </div>
+
+          <p class="acoustic-reason">${item.reason}</p>
+
+          <div class="albums-footer">
+            <span>🎵 Schlüssel-Alben:</span> ${item.albums}
+          </div>
+        </article>
+      `;
+    }
+
+    function renderScenarioTable(items, selectedHp) {
+      const rows = items.map(item => {
+        const podiumStr = item.podium.map(p => {
+          const bold = (selectedHp !== "all" && p.name === selectedHp) ? `style="color: #ff6b7b; text-decoration: underline;"` : "";
+          return `<div ${bold}>${p.rank} <strong>${p.name}</strong> <span style="color: var(--text-secondary);">(${p.role})</span></div>`;
+        }).join("");
+
+        return `
+          <tr>
+            <td>
+              <strong style="font-size: 0.96rem; color: var(--text-primary);">${item.title}</strong><br>
+              <span style="color: var(--accent-gold); font-size: 0.8rem;">${item.moodLabel}</span>
+            </td>
+            <td>${item.epoch}</td>
+            <td>
+              <span class="badge ${getBadgeClass(item.badgeType)}" style="margin-bottom: 6px;">${item.formatBadge}</span><br>
+              <span style="font-size: 0.8rem; color: var(--text-secondary);">${item.settings}</span>
+            </td>
+            <td>
+              <strong style="color: var(--accent-gold-light);">${item.roomLabel}</strong><br>
+              <span>${item.chain}</span>
+            </td>
+            <td style="min-width: 220px;">${podiumStr}</td>
+            <td>
+              <div style="margin-bottom: 6px;">${item.reason}</div>
+              <div style="font-size: 0.78rem; color: var(--accent-gold-light);"><strong>Alben:</strong> ${item.albums}</div>
+            </td>
+          </tr>
+        `;
+      }).join("");
+
+      return `
+        <div class="matrix-table-wrapper">
+          <table class="matrix-table">
+            <thead>
+              <tr>
+                <th>Szenario & Haltung</th>
+                <th>Epoche & Quelle</th>
+                <th>Format & Settings</th>
+                <th>Raum & Audiokette</th>
+                <th>Kopfhörer-Treppchen</th>
+                <th>Akustischer Fokus & Referenzen</th>
+              </tr>
+            </thead>
+            <tbody>${rows}</tbody>
+          </table>
+        </div>
+      `;
+    }
+
+    // Filter & Render Album Library (Tab 2)
+    function renderAlbums() {
+      const query = document.getElementById("search-albums").value.trim().toLowerCase();
+      const cat = document.getElementById("filter-album-cat").value;
+      const fmt = document.getElementById("filter-album-format").value;
+
+      const filtered = ALBUMS.filter(a => {
+        if (cat !== "all" && a.category !== cat) return false;
+        if (fmt !== "all" && a.format !== fmt) return false;
+        if (query) {
+          const hay = `${a.artist} ${a.album} ${a.tracks} ${a.drummer} ${a.notes} ${a.headphone}`.toLowerCase();
+          if (!hay.includes(query)) return false;
+        }
+        return true;
+      });
+
+      document.getElementById("album-counter").innerHTML = `<strong>${filtered.length}</strong> von ${ALBUMS.length} Alben-Referenzen angezeigt`;
+
+      const container = document.getElementById("albums-output");
+      if (filtered.length === 0) {
+        container.innerHTML = `
+          <div class="empty-state" style="grid-column: 1 / -1;">
+            <h3>Keine Alben für diesen Filter gefunden</h3>
+            <button type="button" class="btn btn-primary btn-sm" style="margin-top: 12px;" onclick="resetAlbumFilters()">Alle Alben zeigen</button>
+          </div>
+        `;
+        return;
+      }
+
+      container.innerHTML = filtered.map(a => {
+        const badgeClass = a.format === "Atmos" ? "badge-atmos" : "badge-stereo";
+        const searchCopy = `${a.artist} ${a.tracks.split(",")[0]}`;
+        return `
+          <article class="album-card">
+            <div style="display: flex; justify-content: space-between; align-items: flex-start; gap: 8px;">
+              <div>
+                <div class="album-artist">${a.artist}</div>
+                <h3 class="album-name">${a.album}</h3>
+              </div>
+              <span class="badge ${badgeClass}">${a.formatDetail}</span>
+            </div>
+
+            <div class="album-tracks">
+              <strong>Anspieltipp:</strong> ${a.tracks} <span style="color: var(--text-secondary);">| Drummer: ${a.drummer}</span>
+            </div>
+
+            <p style="font-size: 0.86rem; color: var(--text-secondary); flex-grow: 1;">
+              ${a.notes}
+            </p>
+
+            <div style="display: flex; justify-content: space-between; align-items: center; gap: 8px; padding-top: 10px; border-top: 1px solid var(--border-subtle); font-size: 0.8rem;">
+              <span style="color: var(--accent-gold-light); font-weight: 600;">${a.headphone}</span>
+              <button type="button" class="btn btn-secondary btn-sm" onclick="copyText('${searchCopy.replace(/'/g, "\\'")}', 'Suchbegriff für Apple Music kopiert!')">
+                📋 Für Apple Music kopieren
+              </button>
+            </div>
+          </article>
+        `;
+      }).join("");
+    }
+
+    function resetAlbumFilters() {
+      document.getElementById("search-albums").value = "";
+      document.getElementById("filter-album-cat").value = "all";
+      document.getElementById("filter-album-format").value = "all";
+      renderAlbums();
+    }
+
+    // Clipboard Helper (iframe & Safari compatible)
+    function copyText(text, successMessage) {
+      const textarea = document.createElement("textarea");
+      textarea.value = text;
+      textarea.style.position = "fixed";
+      textarea.style.opacity = "0";
+      document.body.appendChild(textarea);
+      textarea.select();
+      try {
+        document.execCommand("copy");
+        showToast(successMessage || "In die Zwischenablage kopiert!");
+      } catch (err) {
+        showToast("Kopieren fehlgeschlagen");
+      }
+      document.body.removeChild(textarea);
+    }
+
+    // Standalone HTML File Downloader
+    function downloadStandaloneApp() {
+      try {
+        const htmlContent = "<!DOCTYPE html>\n" + document.documentElement.outerHTML;
+        const blob = new Blob([htmlContent], { type: "text/html;charset=utf-8" });
+        const url = URL.createObjectURL(blob);
+        const a = document.createElement("a");
+        a.href = url;
+        a.download = "HiFi-Entscheidungs-Cockpit.html";
+        document.body.appendChild(a);
+        a.click();
+        document.body.removeChild(a);
+        setTimeout(() => URL.revokeObjectURL(url), 1500);
+        showToast("📲 Datei 'HiFi-Entscheidungs-Cockpit.html' wurde erstellt!");
+      } catch (e) {
+        showToast("Fehler beim Erstellen der Datei.");
+      }
+    }
+
+    // Modal Controls
+    function openHelpModal() {
+      document.getElementById("help-modal").classList.add("open");
+    }
+
+    function closeHelpModal(e) {
+      document.getElementById("help-modal").classList.remove("open");
+    }
+
+    // Toast Helper
+    function showToast(msg) {
+      const container = document.getElementById("toast-container");
+      const toast = document.createElement("div");
+      toast.className = "toast";
+      toast.innerHTML = `<span>✨</span> <span>${msg}</span>`;
+      container.appendChild(toast);
+      setTimeout(() => {
+        toast.style.opacity = "0";
+        toast.style.transition = "opacity 0.25s ease";
+        setTimeout(() => toast.remove(), 250);
+      }, 2800);
+    }
+
+    // Initial Render on Load
+    window.addEventListener("DOMContentLoaded", () => {
+      renderMatrix();
+      renderAlbums();
+    });
+  </script>
+
+</body></html>
